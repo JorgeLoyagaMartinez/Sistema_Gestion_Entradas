@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\EventoController;
-use App\Http\Controllers\TicketController;
-use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\EventosController;
+use App\Http\Controllers\TicketsController;
+use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +36,6 @@ Route::resource('usuarios',UsuarioController::class)->except('destroy','update')
 
 Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*/
 
-Route::resource('usuarios',UsuarioController::class);
-Route::resource('eventos',EventoController::class);
-Route::resource('tickets',TicketController::class);
+Route::resource('usuarios',UsuariosController::class);
+Route::resource('eventos',EventosController::class);
+Route::resource('tickets',TicketsController::class);

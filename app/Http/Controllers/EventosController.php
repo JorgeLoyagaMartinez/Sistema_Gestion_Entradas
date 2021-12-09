@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class EventoController extends Controller
+class EventosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,16 +18,9 @@ class EventoController extends Controller
         
         if ($request->has('nombre')){
             $busqueda = 'Resultados para: '.$nombre;
-            // $eventos = DB::table('eventos')
-            //             ->select('*')
-            //             ->where('nombre', 'like', '%'.$nombre.'%')
-            //             ->get();
             $eventos = Event::where('nombre', 'like', '%'.$nombre.'%')->get();
         } else {
             $busqueda = 'Todos los eventos';
-            // $eventos = DB::table('eventos')
-            //             ->select('*')
-            //             ->get();
             $eventos = Event::get();
         }
 
@@ -59,10 +51,6 @@ class EventoController extends Controller
     public function store(Request $request)
     {
     
-        // foreach($evento as $clave => $valor) {
-        //     DB::insert($clave, $valor);            
-        // }
-
         Event::create([
             'nombre' => $request->get('nombre'),
             'descripcion' => $request->get('descripcion'),
@@ -100,9 +88,9 @@ class EventoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Event $evento)
     {
-        //
+        return view('eventos.edit', ['evento'=>$evento]);
     }
 
     /**
@@ -112,9 +100,21 @@ class EventoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Event $evento)
     {
-        //
+       $evento->update([
+        'nombre' => request('nombre'),
+        'descripcion' => request('descripcion'),
+        'portada' => request('portada'),
+        'fecha' => request('fecha'),
+        'lugar' => request('lugar'),
+        'horario' => request('horario'),
+        'precio' => request('precio'),
+        'stock' => request('stock'),
+        'estado' => request('estado')
+       ]);
+
+       return redirect()->route('eventos.show', $evento);
     }
 
     /**
@@ -123,8 +123,9 @@ class EventoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Event $evento)
     {
-        //
+        $evento->delete();
+        return redirect()->route('eventos.eventos');
     }
 }
