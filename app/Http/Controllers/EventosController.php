@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 class EventosController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    //Listado de eventos
     public function index(Request $request)
     {
         $nombre = $request->get('nombre');
+
         
         if ($request->has('nombre')){
             $busqueda = 'Resultados para: '.$nombre;
@@ -26,28 +23,20 @@ class EventosController extends Controller
 
         $parametro = [
             'eventos' => $eventos,
-            'titulo' => $busqueda
+            'titulo' => $busqueda,
+            'nombre' => $nombre
         ];
 
         return view('eventos.eventos', $parametro);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    //Formulario de creación de un nuevo evento 
     public function create()
     {
         return view('eventos.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    //Guardar el evento nuevo en la DB
     public function store(Request $request)
     {
     
@@ -64,17 +53,10 @@ class EventosController extends Controller
         ]);
 
         return redirect()->route('eventos.eventos');
-
-    
             
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Mostrar un evento en específico
     public function show($id)
     {
         $evento = Event::findOrFail($id);
@@ -82,24 +64,13 @@ class EventosController extends Controller
         return view('eventos.show', ['evento'=>$evento]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Formulario de edición de un evento
     public function edit(Event $evento)
     {
         return view('eventos.edit', ['evento'=>$evento]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Actualizar la DB con los nuevos datos del evento
     public function update(Event $evento)
     {
        $evento->update([
@@ -117,12 +88,7 @@ class EventosController extends Controller
        return redirect()->route('eventos.show', $evento);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    //Eliminar un evento por su id
     public function destroy(Event $evento)
     {
         $evento->delete();

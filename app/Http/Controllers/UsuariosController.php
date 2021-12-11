@@ -14,8 +14,6 @@ class UsuariosController extends Controller
      */
     public function index(Request $request)
     {
-        //Saber si tengo definido o no, me devulve true o false
-        $request->has("idUsuario");
 
         $idUsuario = $request->get("idUsuario");
         $dni = $request->get("dni");
@@ -55,7 +53,7 @@ class UsuariosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request;
     }
 
     /**
