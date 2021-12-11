@@ -14,16 +14,15 @@ class EventosController extends Controller
 
         
         if ($request->has('nombre')){
-            $busqueda = 'Resultados para: '.$nombre;
+            //$busqueda = 'Resultados para: '.$nombre;
             $eventos = Event::where('nombre', 'like', '%'.$nombre.'%')->get();
         } else {
-            $busqueda = 'Todos los eventos';
+            //$busqueda = 'Todos los eventos';
             $eventos = Event::get();
         }
 
         $parametro = [
             'eventos' => $eventos,
-            'titulo' => $busqueda,
             'nombre' => $nombre
         ];
 

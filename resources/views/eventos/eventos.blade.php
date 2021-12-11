@@ -5,7 +5,7 @@
 @section('content')
     <h1>Gestión de eventos</h1>
         <h2>Búsqueda de eventos</h2>
-        @if ($nombre)
+        @if (!$nombre)
             <h3>{{ 'Resultados para ' . $nombre}}</h3>
         @else 
             <h3>Todos los eventos</h3>
