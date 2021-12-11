@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ticket;
+use App\Models\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,25 +16,16 @@ class UsuariosController extends Controller
      */
     public function index(Request $request)
     {
+        
+        $usuarios = Usuario::get();
+        //tickets por usuario: calcular cantidad y listarlos
+        $tickets = DB::select("SELECT SUM(cantidad) FROM tickets");
 
-        $idUsuario = $request->get("idUsuario");
-        $dni = $request->get("dni");
-        //devuelve array de objetos iguales a la base datos que pedi
-        /*$usuarios = DB::select("SELECT * FROM usuario");
-        */
-
-        $usuarios = DB::table("usuario")
-                        ->select("*")
-                        ->where("idUsuario","like","%".$idUsuario."%")
-                        ->Where("dni","like", $dni."%")
-                        ->get();
         $parametro = [
-            "usuarios" => $usuarios,
-            "titulo" => "Esto es la tabla completa de Usuarios"
+            'usuarios' => $usuarios,
+            //'cantidadEventos' => $cantidadEventos,
         ];
-        return view('usuarios.usuarios', $parametro);
-        //return $idUsuario;
-        //return "Esto es el index del UsusarioController";
+        return view('usuarios.usuarios', $tickets);
     }
 
     /**
@@ -53,7 +46,18 @@ class UsuariosController extends Controller
      */
     public function store(Request $request)
     {
-        return $request;
+        //Validación de datos del formulario
+        $request->validate([
+            'nombre' => 'required',
+            'apellido' => 'required',
+            'mail' => ['required', 'email'],
+            'password' => ['required', 'min:6'],
+            'password_confirmation' => 'confirmed'
+        ], [
+            'password_confirmation.confirmed' => 'Las contraseñas ingresadas no coinciden'
+        ]);
+
+        //Enviar los datos 
     }
 
     /**

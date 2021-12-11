@@ -1,4 +1,4 @@
-<h1>{{ $titulo }}</h1>
+{{-- <h1>{{ $titulo }}</h1> --}}
 <form method="get" action={{ route("usuarios.index")}}>
    @csrf
    <label>idUsuario: </label> <input type="text" name="idUsuario"><br>
@@ -16,7 +16,7 @@
          <th>Password</th>
       </tr>
    </thead>
-      <tbody>
+      {{-- <tbody>
          @foreach ($usuarios as $usuario)
             <tr>
                <td>{{ $usuario->idUsuario }}</td>
@@ -27,7 +27,7 @@
                <td>{{ $usuario->password }}</td>
             </tr>
          @endforeach
-      </tbody>
+      </tbody> --}}
 </table>
 <br>
 <br>
