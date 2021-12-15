@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 
 <body>
@@ -104,9 +104,9 @@
                                     <li><a href="#">Ingles</a></li>
                                 </ul>
                             </div>
-                            
+
                             <div class="header__top__right__auth">
-                                <a href="#"></i>                               
+                                <a href="#"></i>
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
 			<ul id="login-dp" class="dropdown-menu">
 				<li>
@@ -150,9 +150,9 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-                                
+
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,10 +167,10 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Inicio</a></li>
-                            <li><a href="./tus-eventos.html">Tus Eventos</a></li>
-                            <li><a href="#">Proximos</a></li>
-                            <li><a href="./quienes-somos.html">Quienes Somos</a></li>
+                            <li class="active"><a href="./index.blade.php">Inicio</a></li>
+                            <li><a href="./tus-eventos.blade.php">Tus Eventos</a></li>
+                            <li><a href="proximos-eventos.blade.php">Proximos</a></li>
+                            <li><a href="./quienes-somos.blade.php">Quienes Somos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -178,7 +178,7 @@
                     <div class="header__cart" >
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span></span></a></li>
-                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
+                            <li><a href="carrito.blade.php"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>$1500.00</span></div>
                     </div>
@@ -245,7 +245,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="../img/breadcrumb.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -271,17 +271,17 @@
                     <div class="product__details__pic">
                         <div class="product__details__pic__item">
                             <img class="product__details__pic__item--large"
-                                src="img/product/details/product-details-1.jpg" alt="">
+                                src="../img/product/details/product-details-1.jpg" alt="">
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="img/product/details/thumb-1.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
-                                src="img/product/details/thumb-2.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
-                                src="img/product/details/thumb-3.jpg" alt="">
-                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
-                                src="img/product/details/thumb-4.jpg" alt="">
+                            <img data-imgbigurl="../img/product/details/product-details-2.jpg"
+                                src="../img/product/details/thumb-1.jpg" alt="">
+                            <img data-imgbigurl="../img/product/details/product-details-3.jpg"
+                                src="../img/product/details/thumb-2.jpg" alt="">
+                            <img data-imgbigurl="../img/product/details/product-details-5.jpg"
+                                src="../img/product/details/thumb-3.jpg" alt="">
+                            <img data-imgbigurl="../img/product/details/product-details-4.jpg"
+                                src="../img/product/details/thumb-4.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -422,7 +422,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="../img/product/product-1.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -437,7 +437,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="../img/product/product-2.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -452,7 +452,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="../img/product/product-3.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -467,7 +467,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="../img/product/product-7.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -554,14 +554,14 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
 
 
 </body>

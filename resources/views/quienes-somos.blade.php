@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Ogani Template">
-    <meta name="keywords" content="Ogani, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fascket">
+        <meta name="keywords" content="Fascket, Tickets, Entradas, Eventos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fascket | Conocenos</title>
+        <link rel="shortcut icon" href="../../public/img/favicon.png" type="image/x-icon">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+        <!-- Font Awesome CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+        <!-- jQuery -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <!-- Bootstrap JS -->
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="../../public/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/login.css" type="text/css">
+
+    </head>
 
 <body>
     <!-- Page Preloder -->
@@ -33,7 +45,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="../../public/img/logo2.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -44,12 +56,12 @@
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
-                <img src="img/language.png" alt="">
-                <div>English</div>
+                <img src="../../public/img/language2.png" alt="">
+                <div>Español</div>
                 <span class="arrow_carrot-down"></span>
                 <ul>
-                    <li><a href="#">Spanis</a></li>
-                    <li><a href="#">English</a></li>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">Ingles</a></li>
                 </ul>
             </div>
             <div class="header__top__right__auth">
@@ -58,33 +70,13 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
-                <li><a href="#">Pages</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li class="active"><a href="./index.blade.php">Inicio</a></li>
+                <li><a href="./tus-eventos.blade.php">Tus Eventos</a></li>
+                <li><a href="proximos-eventos.blade.php">Proximos Eventos</a></li>
+                <li><a href="./quienes-somos.blade.php">Conocenos</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
-        <div class="header__top__right__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
-        </div>
-        <div class="humberger__menu__contact">
-            <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
-            </ul>
-        </div>
     </div>
     <!-- Humberger End -->
 
@@ -96,7 +88,7 @@
                     <div class="col-lg-12 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__language">
-                                <img src="img/language2.png" alt="">
+                                <img src="../../public/img/language2.png" alt="">
                                 <div>Español</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
@@ -104,9 +96,9 @@
                                     <li><a href="#">Ingles</a></li>
                                 </ul>
                             </div>
-                            
+
                             <div class="header__top__right__auth">
-                                <a href="#"></i>                               
+                                <a href="#"></i>
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
 			<ul id="login-dp" class="dropdown-menu">
 				<li>
@@ -150,9 +142,9 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-                                
+
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,16 +153,16 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo2.png" alt=""></a>
+                        <a href="./index.blade.php"><img src="../img/logo2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./tus-eventos.html">Tus Eventos</a></li>
-                            <li><a href="proximos-eventos.html">Proximos</a></li>
-                            <li class="active"><a href="./quienes-somos.html">Quienes Somos</a></li>
+                            <li><a href="./index.blade.php">Inicio</a></li>
+                            <li><a href="./tus-eventos.blade.php">Tus Eventos</a></li>
+                            <li><a href="proximos-eventos.blade.php">Proximos</a></li>
+                            <li class="active"><a href="./quienes-somos.blade.php">Quienes Somos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -178,7 +170,7 @@
                     <div class="header__cart" >
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span></span></a></li>
-                            <li><a href="carrito.html"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
+                            <li><a href="carrito.blade.php"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>$1500.00</span></div>
                     </div>
@@ -190,20 +182,20 @@
         </div>
     </header>
     <!-- Header Section End -->
-    
 
-    
+
+
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="../../public/img/breadcrumb.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Contact Us</h2>
+                        <h2>Conocenos</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <span>Contact Us</span>
+                            <a href="./index.blade.php">Inicio</a>
+                            <span>Conocenos</span>
                         </div>
                     </div>
                 </div>
@@ -219,21 +211,21 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_phone"></span>
-                        <h4>Phone</h4>
-                        <p>+01-3-8888-6868</p>
+                        <h4>Telefono</h4>
+                        <p>+51-3-8888-6868</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_pin_alt"></span>
-                        <h4>Address</h4>
+                        <h4>Direccion</h4>
                         <p>60-49 Road 11378 New York</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
                     <div class="contact__widget">
                         <span class="icon_clock_alt"></span>
-                        <h4>Open time</h4>
+                        <h4>Horario</h4>
                         <p>10:00 am to 23:00 pm</p>
                     </div>
                 </div>
@@ -241,7 +233,7 @@
                     <div class="contact__widget">
                         <span class="icon_mail_alt"></span>
                         <h4>Email</h4>
-                        <p>hello@colorlib.com</p>
+                        <p>fascket@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -273,21 +265,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact__form__title">
-                        <h2>Leave Message</h2>
+                        <h2>Contactanos!</h2>
                     </div>
                 </div>
             </div>
             <form action="#">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Tu nombre">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your Email">
+                        <input type="text" placeholder="Tu Email">
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea placeholder="Your message"></textarea>
-                        <button type="submit" class="site-btn">SEND MESSAGE</button>
+                        <textarea placeholder="Tu mensaje"></textarea>
+                        <button type="submit" class="site-btn">ENVIAR MENSAJE</button>
                     </div>
                 </div>
             </form>
@@ -302,7 +294,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.blade.php"><img src="../../public/img/logo2.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -353,9 +345,9 @@
                 <div class="col-lg-12">
                     <div class="footer__copyright">
                         <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | De Argentina con amor por <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://fascket-clientes.com" target="_blank">Fascket</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
-                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                        <div class="footer__copyright__payment"><img src="../img/payment-item.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -364,14 +356,14 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../public/js/jquery-3.3.1.min.js"></script>
+    <script src="../../public/js/bootstrap.min.js"></script>
+    <script src="../../public/js/jquery.nice-select.min.js"></script>
+    <script src="../../public/js/jquery-ui.min.js"></script>
+    <script src="../../public/js/jquery.slicknav.js"></script>
+    <script src="../../public/js/mixitup.min.js"></script>
+    <script src="../../public/js/owl.carousel.min.js"></script>
+    <script src="../../public/js/main.js"></script>
 
 
 
