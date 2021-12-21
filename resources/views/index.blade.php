@@ -229,27 +229,27 @@
                             <div class="row">
                                 <div class="categories__slider owl-carousel">
                                     <div class="col-lg-3">
-                                        <div class="categories__item set-bg" data-setbg="../img/categories/cat-1.jpg">
+                                        <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-1.jpg">
                                             <h5><a href="detalle.blade.php">Mas Populares</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="categories__item set-bg" data-setbg="../img/categories/cat-2.jpg">
+                                        <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-2.jpg">
                                             <h5><a href="detalle.blade.php">Nueva Generacion</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="categories__item set-bg" data-setbg="../img/categories/cat-3.jpg">
+                                        <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-3.jpg">
                                             <h5><a href="detalle.blade.php">Recomendaciones</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="categories__item set-bg" data-setbg="../img/categories/cat-4.jpg">
+                                        <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-4.jpg">
                                             <h5><a href="detalle.blade.php">Merchandising</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
-                                        <div class="categories__item set-bg" data-setbg="../img/categories/cat-5.jpg">
+                                        <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-5.jpg">
                                             <h5><a href="detalle.blade.php">Menues</a></h5>
                                         </div>
                                     </div>
@@ -297,7 +297,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="../img/blog/blog-1.jpg" alt="">
+                            <img src="../../public/img/blog/blog-1.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
@@ -312,7 +312,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="../img/blog/blog-2.jpg" alt="">
+                            <img src="../../public/img/blog/blog-2.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
@@ -327,7 +327,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="../img/blog/blog-3.jpg" alt="">
+                            <img src="../../public/img/blog/blog-3.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>

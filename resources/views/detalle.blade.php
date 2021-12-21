@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Ogani Template">
-    <meta name="keywords" content="Ogani, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fascket</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fascket">
+        <meta name="keywords" content="Fascket, Tickets, Entradas, Eventos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fascket</title>
+        <link rel="shortcut icon" href="../../public/img/favicon.png" type="image/x-icon">
 
-    <!-- Bootstrap CSS -->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-    <!-- Font Awesome CSS -->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-    <!-- jQuery -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <!-- Bootstrap JS -->
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+        <!-- Font Awesome CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+        <!-- jQuery -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <!-- Bootstrap JS -->
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/login.css" type="text/css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="../../public/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/login.css" type="text/css">
 
-</head>
+    </head>
 
 <body>
 
@@ -103,7 +103,7 @@
                     <div class="col-lg-12 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__language">
-                                <img src="img/language2.png" alt="">
+                                <img src="../../public/img/language2.png" alt="">
                                 <div>Español</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
@@ -166,7 +166,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="../img/logo2.png" alt=""></a>
+                        <a href="./index.html"><img src="../../public/img/logo2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -203,11 +203,11 @@
                     <div class="container">
                         <h2>Bandalos Chinos</h2>
                     </div>
-                    <img src="../img/hero/hola.jpeg" alt="Banda completa Bandalos Chinos">
+                    <img src="../../public/img/hero/hola.jpeg" alt="Banda completa Bandalos Chinos">
                 </div>
 
                 <div class="container movie-description">
-                    <p>Bandalos Chinos (sin acento), es una banda oriunda de Beccar, provincia de Buenos Aires, formada en el año 2009. El bastión principal que toman los integrantes es el rock y el pop, evolucionando con otros ritmos como el funk y el electro. 
+                    <p>Bandalos Chinos (sin acento), es una banda oriunda de Beccar, provincia de Buenos Aires, formada en el año 2009. El bastión principal que toman los integrantes es el rock y el pop, evolucionando con otros ritmos como el funk y el electro.
                         Su álbum debut, titulado "Bandalos Chinos" fue presentado en el Auditorium San Isidro, le valió una excelente recepción en el ámbito under, teniendo la oportunidad de tocar con otros grupos como Surﬁstas del Sistema, Desper-tar Antoles, Silvestre y La Naranja, Mompox y Santos Wussies, entre otros. Sale al mercado en 2012. </p>
                     <div class="collapse" id="collapseExample">
                         <p class="cast">
@@ -347,7 +347,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="../img/logo2.png" alt=""></a>
+                            <a href="../../public/index.html"><img src="../../public/img/logo2.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Direccion: Av. del Libertador 2500</li>
@@ -399,7 +399,7 @@
                     <div class="footer__copyright">
                         <div class="footer__copyright__text"><p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | De Argentina con amor por <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://fascket-clientes.com" target="_blank">Fascket</a>
   </p></div>
-                        <div class="footer__copyright__payment"><img src="../img/payment-item.png" alt=""></div>
+                        <div class="footer__copyright__payment"><img src="../../public/img/payment-item.png" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -408,14 +408,15 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.nice-select.min.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
-    <script src="../js/jquery.slicknav.js"></script>
-    <script src="../js/mixitup.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../../public/js/jquery-3.3.1.min.js"></script>
+    <script src="../../public/js/bootstrap.min.js"></script>
+    <script src="../../public/js/jquery.nice-select.min.js"></script>
+    <script src="../../public/js/jquery-ui.min.js"></script>
+    <script src="../../public/js/jquery.slicknav.js"></script>
+    <script src="../../public/js/mixitup.min.js"></script>
+    <script src="../../public/js/owl.carousel.min.js"></script>
+    <script src="../../public/js/main.js"></script>
+    <script src="../../public/js/like.js"></script>
 
 </body>
 

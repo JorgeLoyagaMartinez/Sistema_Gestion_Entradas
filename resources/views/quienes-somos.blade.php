@@ -161,8 +161,8 @@
                         <ul>
                             <li><a href="./index.blade.php">Inicio</a></li>
                             <li><a href="./tus-eventos.blade.php">Tus Eventos</a></li>
-                            <li><a href="proximos-eventos.blade.php">Proximos</a></li>
-                            <li class="active"><a href="./quienes-somos.blade.php">Quienes Somos</a></li>
+                            <li><a href="proximos-eventos.blade.php">Proximos Eventos</a></li>
+                            <li class="active"><a href="./quienes-somos.blade.php">Conocenos</a></li>
                         </ul>
                     </nav>
                 </div>
