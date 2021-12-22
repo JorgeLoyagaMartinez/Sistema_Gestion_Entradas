@@ -1,50 +1,87 @@
-#login-dp{
+#login-dp {
     min-width: 250px;
     padding: 14px 14px 0;
-    overflow:hidden;
-    background-color:rgba(255,255,255,.8);
+    overflow: hidden;
+    background-color: grey;
 }
-#login-dp .help-block{
-    font-size:12px    
+#login-dp .help-block {
+    font-size: 12px;
 }
-#login-dp .bottom{
-    background-color:rgba(255,255,255,.8);
-    border-top:1px solid #ddd;
-    clear:both;
-    padding:14px;
+#login-dp .bottom {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #ddd;
+    clear: both;
+    padding: 14px;
 }
-#login-dp .social-buttons{
-    margin:12px 0    
+#login-dp .social-buttons {
+    margin: 12px 0;
 }
-#login-dp .social-buttons a{
+#login-dp .social-buttons a {
     width: 49%;
 }
 #login-dp .form-group {
     margin-bottom: 10px;
 }
-.btn-fb{
+.btn-fb {
     color: #fff;
-    background-color:#3b5998;
+    background-color: #292929;
 }
-.btn-fb:hover{
+.btn-fb:hover {
     color: #fff;
-    background-color:#496ebc 
+    background-color: #496ebc;
 }
-.btn-tw{
+.btn-tw {
     color: #fff;
-    background-color:#55acee;
+    background-color: #55acee;
 }
-.btn-tw:hover{
+.btn-tw:hover {
     color: #fff;
-    background-color:#59b5fa;
+    background-color: #59b5fa;
 }
-@media(max-width:768px){
-    #login-dp{
+@media (max-width: 768px) {
+    #login-dp {
         background-color: inherit;
         color: #fff;
     }
-    #login-dp .bottom{
+    #login-dp .bottom {
         background-color: inherit;
-        border-top:0 none;
+        border-top: 0 none;
     }
+}
+
+
+#login {
+}
+
+.dropdown button {
+    color: black;
+    font-size: 3em;
+    font-family: sans-serif;
+    border: none;
+    background-color: transparent;
+}
+
+#login-div {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    background-color: grey;
+    width: 300px;
+    height: 400px;
+    right: 2em;
+    z-index: 2;
+}
+
+#login-div .close {
+    background-color: #fff;
+    color: black;
+    width: 50px;
+    font-weight: 500;
+    float: right;
+}
+
+.container-login {
+    margin: 20px;
 }

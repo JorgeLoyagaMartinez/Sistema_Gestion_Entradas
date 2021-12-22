@@ -36,6 +36,30 @@ Route::resource('usuarios',UsuarioController::class)->except('destroy','update')
 
 Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*/
 
+Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('/tus-eventos', function () {
+    return view('tusEventos');
+})->name('tus-eventos');
+
+Route::get('/proximos-eventos', function () {
+    return view('proximosEventos');
+})->name('proximos-eventos');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/registro', function () {
+    return view('registro');
+})->name('registro');
+
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin');
+
 Route::resource('usuarios',UsuarioController::class);
 Route::resource('eventos',EventoController::class);
 Route::resource('tickets',TicketController::class);

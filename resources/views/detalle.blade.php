@@ -166,7 +166,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="../../public/img/logo2.png" alt=""></a>
+                        <a href="./index.blade.php"><img src="../../public/img/logo2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
