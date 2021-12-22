@@ -599,6 +599,10 @@ ol {
     position: relative;
 }
 
+#search-text {
+    font-weight: bold;
+}
+
 .hero__search__form form .hero__search__categories:after {
     position: absolute;
     right: 0;
@@ -1578,6 +1582,60 @@ ol {
 .product__pagination a:last-child,
 .blog__pagination a:last-child {
     margin-right: 0;
+}
+
+/*---------------------
+  Details Page
+-----------------------*/
+
+.main-details {
+    text-align: center;
+    margin: 5em;
+}
+
+.fecha {
+    font-size: 3em;
+    color: #6ab963;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.listado {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+#myTab {
+    display: flex;
+    justify-content: center;
+}
+
+#horario {
+    max-width: 500px;
+    height: 2.5em;
+    border: none;
+    background-color: #a923ca;
+    font-size: 2em;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#myTabContent {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    margin: 0 5em;
+    font-size: 1.5em;
 }
 
 /*---------------------
@@ -2657,7 +2715,7 @@ ol {
 }
 
 .footer__widget .footer__widget__social a:hover {
-    background: #7fad39;
+    background: #a923ca;
     color: #ffffff;
     border-color: #ffffff;
 }
@@ -2674,6 +2732,14 @@ ol {
     color: #1c1c1c;
     float: left;
     line-height: 25px;
+}
+
+.footer__copyright__text p a {
+    color: #7fad39;
+}
+
+.footer__copyright__text p a:hover {
+    color: #a923ca;
 }
 
 .footer__copyright__payment {
@@ -3115,6 +3181,7 @@ ol {
     .hero__search__form form .hero__search__categories {
         display: none;
     }
+
     .hero__search__phone {
         float: left;
         margin-top: 30px;

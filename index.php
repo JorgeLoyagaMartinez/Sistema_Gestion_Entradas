@@ -1,34 +1,34 @@
 <?php
-    $conexionMySQL = mysqli_connect("127.0.0.1:3306","root","","gestionentradas");
-    
-    $resultado = mysqli_query($conexionMySQL,"SELECT * FROM usuario");
+    // $conexionMySQL = mysqli_connect("127.0.0.1:3306","root","","gestionentradas");
 
-    while($unFila = mysqli_fetch_assoc($resultado)){
-        print_r($unFila);
-        echo "<br>";
-    }
+    // $resultado = mysqli_query($conexionMySQL,"SELECT * FROM usuario");
 
-    echo "<br>";
-    echo "<br>";
+    // while($unFila = mysqli_fetch_assoc($resultado)){
+    //     print_r($unFila);
+    //     echo "<br>";
+    // }
 
-    $resultado = mysqli_query($conexionMySQL,"SELECT * FROM  evento");
+    // echo "<br>";
+    // echo "<br>";
 
-    while($unFila = mysqli_fetch_assoc($resultado)){
-        print_r($unFila);
-        echo "<br>";
-    }
+    // $resultado = mysqli_query($conexionMySQL,"SELECT * FROM  evento");
 
-    echo "<br>";
-    echo "<br>";
+    // while($unFila = mysqli_fetch_assoc($resultado)){
+    //     print_r($unFila);
+    //     echo "<br>";
+    // }
 
-    $resultado = mysqli_query($conexionMySQL,"SELECT * FROM ticket");
+    // echo "<br>";
+    // echo "<br>";
 
-    while($unFila = mysqli_fetch_assoc($resultado)){
-        print_r($unFila);
-        echo "<br>";
-    }
+    // $resultado = mysqli_query($conexionMySQL,"SELECT * FROM ticket");
 
-    mysqli_close($conexionMySQL);
+    // while($unFila = mysqli_fetch_assoc($resultado)){
+    //     print_r($unFila);
+    //     echo "<br>";
+    // }
+
+    // mysqli_close($conexionMySQL);
 
 ?>
 
