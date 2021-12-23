@@ -128,7 +128,7 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="header__logo">
-                            <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
+                            <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt="" width="150px"></a>
                         </div>
                     </div>
                     <div class="col-lg-6">

@@ -4,6 +4,18 @@
 
         @section('content')
         <!-- Main Banner Section Begin -->
+        {{-- @forelse ($eventos as $evento)
+                <div class="card m-2" style="width: 18rem;">
+                    <img src={{ $evento->portada}} class="card-img-top" alt={{ $evento->nombre }}>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $evento->nombre }}</h5>
+                        <p class="card-text">{{ $evento->descripcion }}</p>
+                        <a href="{{ route('eventos.show', $evento)}}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                @empty
+                <p>No hay resultados para la búsqueda</p>
+        @endforelse --}}
         <section class="hero">
             <div class="container">
                 <div class="row">
@@ -40,7 +52,7 @@
                                     <div class="categories__slider owl-carousel">
                                         <div class="col-lg-3">
                                             <div class="categories__item set-bg" data-setbg="{{ URL::asset('img/categories/cat-1.jpg') }}">
-                                                <h5><a href="{{ route('detalle') }}">Tan Bionica</a></h5>
+                                                <h5><a href="{{ route('detalle') }}"></a></h5>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">

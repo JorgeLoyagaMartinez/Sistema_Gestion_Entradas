@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class TicketController extends Controller
+class UsuariosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,14 +13,7 @@ class TicketController extends Controller
      */
     public function index()
     {
-        //devuelve array de objetos iguales a la base datos que pedi
-        $Tickets = DB::select("SELECT * FROM ticket");
-        $parametro = [
-            "tickets" => $Tickets,
-            "titulo" => "esto es la tabla completa de Tickets"
-        ];
-        return view('tickets.tickets', $parametro);
-        //return "Esto es el index del TicketController";
+        //
     }
 
     /**

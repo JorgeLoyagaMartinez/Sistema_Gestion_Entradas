@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Evento;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,16 +13,28 @@ class EventosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //devuelve array de objetos iguales a la base datos que pedi
-        $Eventos = DB::select("SELECT * FROM eventos");
+        $nombre = $request->get('nombre');
+
+
+
+        if ($request->has('nombre')){
+            //$busqueda = 'Resultados para: '.$nombre;
+            $eventos = Evento::where('nombre', 'like', '%'.$nombre.'%')->get();
+        } else {
+            //$busqueda = 'Todos los eventos';
+            $eventos = Evento::get();
+        }
+
         $parametro = [
-            "eventos" => $Eventos,
-            "titulo" => "esto es la tabla completa de Eventos"
+            'eventos' => $eventos,
+            'nombre' => $nombre
         ];
+
         return view('inicio', $parametro);
-        //return "Esto es el index del EventoController";
+
+        
     }
 
     /**
@@ -31,7 +44,7 @@ class EventosController extends Controller
      */
     public function create()
     {
-        //
+        return view('eventos.create');
     }
 
     /**
@@ -42,7 +55,19 @@ class EventosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Evento::create([
+            'nombre' => $request->get('nombre'),
+            'descripcion' => $request->get('descripcion'),
+            'portada' => $request->get('portada'),
+            'fecha' => $request->get('fecha'),
+            'lugar' => $request->get('lugar'),
+            'horario' => $request->get('horario'),
+            'precio' => $request->get('precio'),
+            'stock' => $request->get('stock'),
+            'estado' => $request->get('estado')
+        ]);
+
+        return redirect()->route('eventos.eventos');
     }
 
     /**
@@ -53,7 +78,9 @@ class EventosController extends Controller
      */
     public function show($id)
     {
-        //
+        $evento = Evento::findOrFail($id);
+
+        return view('eventos.show', ['evento'=>$evento]);
     }
 
     /**
@@ -62,9 +89,9 @@ class EventosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Evento $evento)
     {
-        //
+        return view('eventos.edit', ['evento'=>$evento]);
     }
 
     /**
@@ -74,9 +101,21 @@ class EventosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Evento $evento)
     {
-        //
+        $evento->update([
+            'nombre' => request('nombre'),
+            'descripcion' => request('descripcion'),
+            'portada' => request('portada'),
+            'fecha' => request('fecha'),
+            'lugar' => request('lugar'),
+            'horario' => request('horario'),
+            'precio' => request('precio'),
+            'stock' => request('stock'),
+            'estado' => request('estado')
+           ]);
+
+           return redirect()->route('eventos.show', $evento);
     }
 
     /**
@@ -85,8 +124,9 @@ class EventosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Evento $evento)
     {
-        //
+        $evento->delete();
+        return redirect()->route('eventos.eventos');
     }
 }

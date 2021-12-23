@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\EventoController;
+
 use App\Http\Controllers\EventosController;
-use App\Http\Controllers\TicketController;
-use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\TicketsController;
+use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,14 +35,11 @@ Route::resource('usuarios',UsuarioController::class)->except('destroy','update')
 Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*/
 
 
+// Route::get('/clientes', [ClientesController::class, 'index'])->name("listadito");
 
-Route::get('/', function () {
-    return view('inicio');
-})->name('inicio');
+Route::get('/', [EventosController::class, 'index'])->name('inicio');
 
-Route::get('/tus-eventos', function () {
-    return view('tus-eventos');
-})->name('tus-eventos');
+Route::get('/tus-eventos', [TicketsController::class, 'index'])->name('tus-eventos');
 
 Route::get('/proximos-eventos', function () {
     return view('proximos-eventos');
@@ -64,7 +61,24 @@ Route::get('/pago', function () {
     return view('pago');
 })->name('pago');
 
+Route::get('/registro', function () {
+    return view('no-tengo-cuenta');
+})->name('registro');
 
-Route::resource('usuario',UsuarioController::class);
+Route::get('/eticket', function () {
+    return view('eticket');
+})->name('eticket');
+
+Route::get('/checkout', function () {
+    return view('checkout');
+})->name('checkout');
+
+Route::get('/perfil', function () {
+    return view('perfil-logueado');
+})->name('perfil-logueado');
+
+
 Route::resource('eventos', EventosController::class);
-Route::resource('ticket',TicketController::class);
+Route::resource('tickets', TicketsController::class);
+Route::resource('usuarios', UsuariosController::class);
+

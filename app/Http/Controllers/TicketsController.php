@@ -5,36 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class UsuarioController extends Controller
+class TicketsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        //Saber si tengo definido o no, me devulve true o false
-        $request->has("idUsuario");
-
-        $idUsuario = $request->get("idUsuario");
-        $dni = $request->get("dni");
-        //devuelve array de objetos iguales a la base datos que pedi
-        /*$usuarios = DB::select("SELECT * FROM usuario");
-        */
-
-        $usuarios = DB::table("usuario")
-                        ->select("*")
-                        ->where("idUsuario","like","%".$idUsuario."%")
-                        ->Where("dni","like", $dni."%")
-                        ->get();
+        $tickets = DB::select('SELECT * FROM tickets');
         $parametro = [
-            "usuarios" => $usuarios,
-            "titulo" => "Esto es la tabla completa de Usuarios"
+            "ticket" => $tickets,
+            "titulo" => "Esta es la lista de tickets"
         ];
-        return view('usuarios.usuarios', $parametro);
-        //return $idUsuario;
-        //return "Esto es el index del UsusarioController";
+
+        return view('tus-eventos', $parametro);
     }
 
     /**
@@ -66,7 +52,7 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-        //return "Este es el metodo show del  UsuarioController y es el id: ".$id;
+        //
     }
 
     /**
