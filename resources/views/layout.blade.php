@@ -7,29 +7,29 @@
         <meta name="keywords" content="Fascket, Tickets, Entradas, Eventos">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Fascket</title>
-        <link rel="shortcut icon" href="../../public/img/favicon.png" type="image/x-icon">
+        <title>@yield('title')</title>
+        <link rel="shortcut icon" href="{{ URL::asset('img/favicon.png') }}" type="image/x-icon">
 
         <!-- Bootstrap CSS -->
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- Font Awesome CSS -->
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <!-- jQuery -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!-- Bootstrap JS -->
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
         <!-- Css Styles -->
-        <link rel="stylesheet" href="../../public/css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/elegant-icons.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/nice-select.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/jquery-ui.min.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/owl.carousel.min.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/slicknav.min.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/style.css" type="text/css">
-        <link rel="stylesheet" href="../../public/css/login.css" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/elegant-icons.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/nice-select.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/jquery-ui.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/owl.carousel.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/slicknav.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/login.css') }}" type="text/css">
     </head>
 
     <body>
@@ -43,40 +43,26 @@
         <div class="humberger__menu__overlay"></div>
         <div class="humberger__menu__wrapper">
             <div class="humberger__menu__logo">
-                <a href="index.blade.php"><img src="../../public/img/logo2.png" alt=""></a>
+                <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
             </div>
             <div class="humberger__menu__cart">
                 <ul>
                     <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                 </ul>
                 <div class="header__cart__price">item: <span>$1500.00</span></div>
             </div>
             <div class="humberger__menu__widget">
-                <!--
-
-                Lenguajes
-
-                <div class="header__top__right__language">
-                    <img src="../../public/img/language2.png" alt="">
-                    <div>Español</div>
-                    <span class="arrow_carrot-down"></span>
-                    <ul>
-                        <li><a href="#">Español</a></li>
-                        <li><a href="#">Ingles</a></li>
-                    </ul>
-                </div> -->
-
                 <div class="header__top__right__auth">
                     <a href="#"><i class="fa fa-user"></i> Login</a>
                 </div>
             </div>
             <nav class="humberger__menu__nav mobile-menu">
                 <ul>
-                    <li class="active"><a href="./index.blade.php">Inicio</a></li>
-                    <li><a href="./tus-eventos.blade.php">Tus Eventos</a></li>
-                    <li><a href="proximos-eventos.blade.php">Proximos Eventos</a></li>
-                    <li><a href="./conocenos.blade.php">Conocenos</a></li>
+                    <li><a href="{{ route('inicio') }}">Inicio</a></li>
+                    <li><a href="{{ route('tus-eventos') }}">Tus Eventos</a></li>
+                    <li><a href="{{ route('proximos-eventos') }}">Proximos Eventos</a></li>
+                    <li><a href="{{ route('conocenos') }}">Conocenos</a></li>
                 </ul>
             </nav>
             <div id="mobile-menu-wrap"></div>
@@ -96,18 +82,6 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-6">
                             <div class="header__top__right">
-                                <!--
-                                    Lenguajes
-
-                                <div class="header__top__right__language">
-                                    <img src="../../public/img/language2.png" alt="">
-                                    <div>Español</div>
-                                    <span class="arrow_carrot-down"></span>
-                                    <ul>
-                                        <li><a href="#">Español</a></li>
-                                        <li><a href="#">Ingles</a></li>
-                                    </ul>
-                                </div> -->
                                 <div id="login">
                                     <div class="dropdown">
                                         <button onclick="showLogin()">Login</button>
@@ -154,16 +128,16 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="header__logo">
-                            <a href="index.blade.php"><img src="../../public/img/logo2.png" alt=""></a>
+                            <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <nav class="header__menu">
                             <ul>
-                                <li class="active"><a href="./index.blade.php">Inicio</a></li>
-                                <li><a href="./tus-eventos.blade.php">Tus Eventos</a></li>
-                                <li><a href="proximos-eventos.blade.php">Proximos Eventos</a></li>
-                                <li><a href="./conocenos.blade.php">Conocenos</a></li>
+                                <li class="@yield('inicio')"><a href="{{ route('inicio') }}">Inicio</a></li>
+                                <li class="@yield('tus-eventos')"><a href="{{ route('tus-eventos') }}">Tus Eventos</a></li>
+                                <li class="@yield('proximos-eventos')"><a href="{{ route('proximos-eventos') }}">Proximos Eventos</a></li>
+                                <li class="@yield('conocenos')"><a href="{{ route('conocenos') }}">Conocenos</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -174,7 +148,7 @@
                             </div>
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
-                                <li><a href="carrito.blade.php"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
+                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
                             </ul>
                             <div class="header__cart__price">item: <span>$1500.00</span></div>
                         </div>
@@ -196,12 +170,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__about">
                             <div class="footer__about__logo">
-                                <a href="index.blade.php"><img src="../../public/img/logo2.png" alt=""></a>
+                                <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
                             </div>
                             <ul>
-                                <li>Address: 60-49 Road 11378 New York</li>
-                                <li>Phone: +65 11.188.888</li>
-                                <li>Email: hello@colorlib.com</li>
+                                <li>Dirección: Calle 123 Buenos Aires</li>
+                                <li>Telefono: 0800-888-888</li>
+                                <li>Email: Fascket@soporte.com</li>
                             </ul>
                         </div>
                     </div>
@@ -209,20 +183,10 @@
                         <div class="footer__widget">
                             <h6>Links Utiles</h6>
                             <ul>
-                                <li><a href="#">Protocolos Eventos</a></li>
-                                <li><a href="#">Condiciones de Venta</a></li>
-                                <li><a href="#">Objetos Perdidos</a></li>
-                                <li><a href="#">Preguntas Frecuentes</a></li>
-                                <li><a href="#">Politicas de Privacidad</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Conocenos</a></li>
-                                <li><a href="#">Servicios</a></li>
-                                <li><a href="#">Para Accionistas</a></li>
-                                <li><a href="#">Contactanos</a></li>
-                                <li><a href="#">Tecnologia</a></li>
-                                <li><a href="#">Empleos</a></li>
+                                <li><a href="{{ route('inicio') }}">Inicio</a></li>
+                                <li><a href="{{ route('tus-eventos') }}">Tus Eventos</a></li>
+                                <li><a href="{{ route('proximos-eventos') }}">Proximos Eventos</a></li>
+                                <li><a href="{{ route('conocenos') }}">Conocenos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -251,7 +215,7 @@
                                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | De Argentina con amor por <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://fascket-clientes.com" target="_blank">Fascket</a>
                                 </p>
                             </div>
-                            <div class="footer__copyright__payment"><img src="../../public/img/payment-item.png" alt=""></div>
+                            <div class="footer__copyright__payment"><img src="{{ URL::asset('img/payment-item.png') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -260,16 +224,16 @@
         <!-- Footer Section End -->
 
         <!-- Js Plugins -->
-        <script src="../../public/js/jquery-3.3.1.min.js"></script>
-        <script src="../../public/js/bootstrap.min.js"></script>
-        <script src="../../public/js/jquery.nice-select.min.js"></script>
-        <script src="../../public/js/jquery-ui.min.js"></script>
-        <script src="../../public/js/jquery.slicknav.js"></script>
-        <script src="../../public/js/mixitup.min.js"></script>
-        <script src="../../public/js/owl.carousel.min.js"></script>
-        <script src="../../public/js/main.js"></script>
-        <script src="../../public/js/like.js"></script>
-        <script src="../../public/js/login.js"></script>
+        <script src="{{ URL::asset('js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ URL::asset('js/jquery.nice-select.min.js') }}"></script>
+        <script src="{{ URL::asset('js/jquery-ui.min.js') }}"></script>
+        <script src="{{ URL::asset('js/jquery.slicknav.js') }}"></script>
+        <script src="{{ URL::asset('js/mixitup.min.js') }}"></script>
+        <script src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
+        <script src="{{ URL::asset('js/main.js') }}"></script>
+        <script src="{{ URL::asset('js/like.js') }}"></script>
+        <script src="{{ URL::asset("js/login.js") }}"></script>
 
     </body>
 

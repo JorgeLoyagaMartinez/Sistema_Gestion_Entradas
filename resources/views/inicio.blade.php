@@ -1,16 +1,18 @@
 @extends('layout')
+@section('title', 'Fascket')
+@section('inicio', 'active')
 
         @section('content')
         <!-- Main Banner Section Begin -->
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="hero__item set-bg" data-setbg="../../public/img/hero/hola.jpeg">
+                    <div class="hero__item set-bg" data-setbg="{{ URL::asset('img/hero/hola.jpeg') }}">
                         <div class="hero__text">
                             <span>EN VIVO EN EL HIPODROMO<br />DE SAN ISIDRO</span>
                             <h2>BANDALOS<br />CHINOS</h2>
                             <p>ULTIMAS ENTRADAS DISPONIBLES</p>
-                            <a href="#" class="primary-btn">COMPRA AHORA</a>
+                            <a href="{{ route('detalle') }}" class="primary-btn">COMPRA AHORA</a>
                         </div>
                     </div>
                 </div>
@@ -37,28 +39,28 @@
                                 <div class="row">
                                     <div class="categories__slider owl-carousel">
                                         <div class="col-lg-3">
-                                            <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-1.jpg">
-                                                <h5><a href="detalle.blade.php">Mas Populares</a></h5>
+                                            <div class="categories__item set-bg" data-setbg="{{ URL::asset('img/categories/cat-1.jpg') }}">
+                                                <h5><a href="{{ route('detalle') }}">Tan Bionica</a></h5>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-2.jpg">
-                                                <h5><a href="detalle.blade.php">Nueva Generacion</a></h5>
+                                            <div class="categories__item set-bg" data-setbg="{{ URL::asset('img/categories/cat-2.jpg') }}">
+                                                <h5><a href="{{ route('detalle') }}">Nueva Generacion</a></h5>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-3.jpg">
-                                                <h5><a href="detalle.blade.php">Recomendaciones</a></h5>
+                                            <div class="categories__item set-bg" data-setbg="{{ URL::asset('img/categories/cat-3.jpg') }}">
+                                                <h5><a href="{{ route('detalle') }}">Recomendaciones</a></h5>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-4.jpg">
-                                                <h5><a href="detalle.blade.php">Merchandising</a></h5>
+                                            <div class="categories__item set-bg" data-setbg="{{ URL::asset('img/categories/cat-4.jpg') }}">
+                                                <h5><a href="{{ route('detalle') }}">Merchandising</a></h5>
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
-                                            <div class="categories__item set-bg" data-setbg="../../public/img/categories/cat-5.jpg">
-                                                <h5><a href="detalle.blade.php">Menues</a></h5>
+                                            <div class="categories__item set-bg" data-setbg="{{ URL::asset('img/categories/cat-5.jpg') }}">
+                                                <h5><a href="{{ route('detalle') }}">Menues</a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -78,12 +80,16 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="banner__pic">
-                            <img src="../../public/img/hero/1.png" alt="">
+                            <a href="{{ route('detalle') }}">
+                                <img src="{{ URL::asset('img/hero/1.png') }}" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="banner__pic">
-                            <img src="../../public/img/hero/2.png" alt="">
+                            <a href="{{ route('detalle') }} ">
+                                <img src="{{ URL::asset('img/hero/2.png') }}" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,15 +111,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="blog__item">
                             <div class="blog__item__pic">
-                                <img src="../../public/img/blog/blog-1.jpg" alt="">
+                                <img src="{{ URL::asset('img/blog/blog-1.jpg') }}" alt="">
                             </div>
                             <div class="blog__item__text">
-                            <!--
-                                <ul>
-                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                    <li><i class="fa fa-comment-o"></i> 5</li>
-                                </ul>
-                            -->
                                 <h5><a href="#">Justin Bieber en Argentina</a></h5>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sint, saepe, provident soluta blanditiis odit minus delectus quia, cumque ratione dolores neque numquam quidem totam amet exercitationem iusto dolore placeat. </p>
                             </div>
@@ -122,15 +122,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="blog__item">
                             <div class="blog__item__pic">
-                                <img src="../../public/img/blog/blog-2.jpg" alt="">
+                                <img src="{{ URL::asset('img/blog/blog-2.jpg') }}" alt="">
                             </div>
                             <div class="blog__item__text">
-                            <!--
-                                <ul>
-                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                    <li><i class="fa fa-comment-o"></i> 5</li>
-                                </ul>
-                            -->
                                 <h5><a href="#">Se viene el Cosquin Rock</a></h5>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sint, saepe, provident soluta blanditiis odit minus delectus quia, cumque ratione dolores neque numquam quidem totam amet exercitationem iusto dolore placeat. </p>
                             </div>
@@ -139,15 +133,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="blog__item">
                             <div class="blog__item__pic">
-                                <img src="../../public/img/blog/blog-3.jpg" alt="">
+                                <img src="{{ URL::asset('img/blog/blog-3.jpg') }}" alt="">
                             </div>
                             <div class="blog__item__text">
-                            <!--
-                                <ul>
-                                    <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                    <li><i class="fa fa-comment-o"></i> 5</li>
-                                </ul>
-                            -->
                                 <h5><a href="#">Festivales Ecofriendlies</a></h5>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sint, saepe, provident soluta blanditiis odit minus delectus quia, cumque ratione dolores neque numquam quidem totam amet exercitationem iusto dolore placeat. </p>
                             </div>

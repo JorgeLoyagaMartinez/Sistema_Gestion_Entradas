@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EventoController;
+use App\Http\Controllers\EventosController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
@@ -16,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 //FUNCIONES DE CALLBACK
 /*Route::get('/usuarios', function () {
     $arrayNombre = ["Jorge Loyaga", "Lucas","Juan Ignacio"];
@@ -36,30 +34,37 @@ Route::resource('usuarios',UsuarioController::class)->except('destroy','update')
 
 Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*/
 
+
+
 Route::get('/', function () {
-    return view('index');
-});
+    return view('inicio');
+})->name('inicio');
 
 Route::get('/tus-eventos', function () {
-    return view('tusEventos');
+    return view('tus-eventos');
 })->name('tus-eventos');
 
 Route::get('/proximos-eventos', function () {
-    return view('proximosEventos');
+    return view('proximos-eventos');
 })->name('proximos-eventos');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/conocenos', function () {
+    return view('conocenos');
+})->name('conocenos');
 
-Route::get('/registro', function () {
-    return view('registro');
-})->name('registro');
+Route::get('/detalle', function () {
+    return view('detalle');
+})->name('detalle');
 
-Route::get('/admin', function () {
-    return view('admin');
-})->name('admin');
+Route::get('/carrito', function () {
+    return view('carrito');
+})->name('carrito');
 
-Route::resource('usuarios',UsuarioController::class);
-Route::resource('eventos',EventoController::class);
-Route::resource('tickets',TicketController::class);
+Route::get('/pago', function () {
+    return view('pago');
+})->name('pago');
+
+
+Route::resource('usuario',UsuarioController::class);
+Route::resource('eventos', EventosController::class);
+Route::resource('ticket',TicketController::class);

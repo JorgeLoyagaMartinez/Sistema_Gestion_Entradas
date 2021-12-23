@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class EventoController extends Controller
+class EventosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,14 +14,13 @@ class EventoController extends Controller
      */
     public function index()
     {
-        
         //devuelve array de objetos iguales a la base datos que pedi
-        $Eventos = DB::select("SELECT * FROM evento");
+        $Eventos = DB::select("SELECT * FROM eventos");
         $parametro = [
             "eventos" => $Eventos,
             "titulo" => "esto es la tabla completa de Eventos"
         ];
-        return view('eventos.eventos', $parametro);
+        return view('inicio', $parametro);
         //return "Esto es el index del EventoController";
     }
 
