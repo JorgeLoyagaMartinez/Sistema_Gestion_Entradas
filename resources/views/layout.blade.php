@@ -60,8 +60,7 @@
             <nav class="humberger__menu__nav mobile-menu">
                 <ul>
                     <li><a href="{{ route('inicio') }}">Inicio</a></li>
-                    <li><a href="{{ route('tus-eventos') }}">Tus Eventos</a></li>
-                    <li><a href="{{ route('proximos-eventos') }}">Proximos Eventos</a></li>
+                    <li><a href="{{ route('tus-eventos') }}">Eventos</a></li>
                     <li><a href="{{ route('conocenos') }}">Conocenos</a></li>
                 </ul>
             </nav>
@@ -131,12 +130,11 @@
                             <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt="" width="150px"></a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" style="text-align: center">
                         <nav class="header__menu">
                             <ul>
                                 <li class="@yield('inicio')"><a href="{{ route('inicio') }}">Inicio</a></li>
-                                <li class="@yield('tus-eventos')"><a href="{{ route('tus-eventos') }}">Tus Eventos</a></li>
-                                <li class="@yield('proximos-eventos')"><a href="{{ route('proximos-eventos') }}">Proximos Eventos</a></li>
+                                <li class="@yield('tus-eventos')"><a href="{{ route('tus-eventos') }}">Eventos</a></li>
                                 <li class="@yield('conocenos')"><a href="{{ route('conocenos') }}">Conocenos</a></li>
                             </ul>
                         </nav>
@@ -184,8 +182,7 @@
                             <h6>Links Utiles</h6>
                             <ul>
                                 <li><a href="{{ route('inicio') }}">Inicio</a></li>
-                                <li><a href="{{ route('tus-eventos') }}">Tus Eventos</a></li>
-                                <li><a href="{{ route('proximos-eventos') }}">Proximos Eventos</a></li>
+                                <li><a href="{{ route('tus-eventos') }}">Eventos</a></li>
                                 <li><a href="{{ route('conocenos') }}">Conocenos</a></li>
                             </ul>
                         </div>
