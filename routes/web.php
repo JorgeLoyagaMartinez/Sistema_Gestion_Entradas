@@ -39,11 +39,7 @@ Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*
 
 Route::get('/', [EventosController::class, 'index'])->name('inicio');
 
-Route::get('/tus-eventos', [TicketsController::class, 'index'])->name('tus-eventos');
-
-Route::get('/proximos-eventos', function () {
-    return view('proximos-eventos');
-})->name('proximos-eventos');
+Route::get('/tus-eventos', [EventosController::class, 'Listado'])->name('tus-eventos');
 
 Route::get('/conocenos', function () {
     return view('conocenos');
@@ -77,6 +73,9 @@ Route::get('/perfil', function () {
     return view('perfil-logueado');
 })->name('perfil-logueado');
 
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 
 Route::resource('eventos', EventosController::class);
 Route::resource('tickets', TicketsController::class);

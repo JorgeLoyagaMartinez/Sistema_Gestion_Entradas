@@ -349,7 +349,7 @@ ol {
 .header__menu ul li {
     list-style: none;
     display: inline-block;
-    margin: 60px;
+    margin: 0 60px;
     position: relative;
 }
 
@@ -868,6 +868,10 @@ ol {
     font-weight: 700;
 }
 
+#search-h3 {
+    color: #000;
+}
+
 /*---------------------
   Latest Product
 -----------------------*/
@@ -918,6 +922,7 @@ ol {
 .latest-product__item__pic {
     float: left;
     margin-right: 26px;
+    background-size: cover;
 }
 
 .latest-product__item__pic img {
@@ -928,6 +933,8 @@ ol {
 .latest-product__item__text {
     overflow: hidden;
     padding-top: 10px;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .latest-product__item__text h6 {
@@ -998,6 +1005,10 @@ ol {
     display: inline-block;
     font-size: 16px;
     color: #ffffff;
+}
+
+.banner__pic {
+    margin: 20px 0;
 }
 
 /*---------------------
@@ -1541,6 +1552,8 @@ ol {
 
 .product__item__text h6 a {
     color: #252525;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .product__item__text h5 {
