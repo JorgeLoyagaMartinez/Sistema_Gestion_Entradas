@@ -34,8 +34,33 @@ class EventosController extends Controller
 
         return view('eventos.eventos', $parametro);
 
-        
     }
+
+    public function Listado(Request $request)
+    {
+        $nombre = $request->get('nombre');
+
+
+
+        if ($request->has('nombre')){
+            //$busqueda = 'Resultados para: '.$nombre;
+            $eventos = Evento::where('nombre', 'like', '%'.$nombre.'%')->get();
+        } else {
+            //$busqueda = 'Todos los eventos';
+            $eventos = Evento::get();
+        }
+
+
+
+        $parametro = [
+            'eventos' => $eventos,
+            'nombre' => $nombre
+        ];
+
+        return view('tus-eventos', $parametro);
+
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -80,7 +105,7 @@ class EventosController extends Controller
     {
         $evento = Evento::findOrFail($id);
 
-        return view('eventos.show', ['evento'=>$evento]);
+        return view('detalle', ['evento'=>$evento]);
     }
 
     /**

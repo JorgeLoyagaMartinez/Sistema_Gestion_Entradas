@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="{{ URL::asset('css/slicknav.min.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ URL::asset('css/login.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/loginregistroestilo.css') }}" type="text/css">
     </head>
 
     <body>
