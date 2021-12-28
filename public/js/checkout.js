@@ -45,6 +45,21 @@ const handleDeleteItem = (id) => {
 }
 
 const productList = (product)=>{
+  let quantity = 1;
+
+  const handleAddItem = (itemQuantity) => {
+    if (itemQuantity < item.stock) {
+      console.log(quantity)
+      return quantity += 1;
+    } 
+  }
+  
+  const handleRemoveItem = (itemQuantity) => {
+    if (itemQuantity > 2) {
+      return quantity -= 1;
+    } 
+  }
+
 
   const productToShow = product.map((item) => 
     `<tr>
@@ -57,8 +72,10 @@ const productList = (product)=>{
       </td>
       <td class="shoping__cart__quantity">
           <div class="quantity">
+          <div onclick='handleRemoveItem(${quantity})'>-</div>
               <div class="pro-qty">
-                  <input type="text" value=${item.quantity}>
+                  <input type="text" value=${quantity}>
+                  <div onclick='handleAddItem(${quantity})'>+</div>
               </div>
           </div>
       </td>
