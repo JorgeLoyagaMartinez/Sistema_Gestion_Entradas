@@ -81,3 +81,6 @@ Route::resource('eventos', EventosController::class);
 Route::resource('tickets', TicketsController::class);
 Route::resource('usuarios', UsuariosController::class);
 
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
