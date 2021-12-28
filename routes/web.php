@@ -38,6 +38,7 @@ Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*
 // Route::get('/clientes', [ClientesController::class, 'index'])->name("listadito");
 
 Route::get('/', [EventosController::class, 'index'])->name('inicio');
+Route::get('/tus-eventos/{categoria}', [EventosController::class, 'categoryFilter'])->name('categorias');
 
 Route::get('/tus-eventos', [TicketsController::class, 'index'])->name('tus-eventos');
 
