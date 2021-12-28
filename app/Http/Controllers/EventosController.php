@@ -32,7 +32,7 @@ class EventosController extends Controller
             'nombre' => $nombre
         ];
 
-        return view('inicio', $parametro);
+        return view('eventos.eventos', $parametro);
 
     }
 
@@ -117,6 +117,14 @@ class EventosController extends Controller
     public function edit(Evento $evento)
     {
         return view('eventos.edit', ['evento'=>$evento]);
+    }
+
+
+    public function categoryFilter($categoria)
+    {
+        $eventos = Evento::where('categoria', '=', $categoria)->get();
+        return view('eventos.categorias', ['eventos'=>$eventos]);
+        // cambiar ruta
     }
 
     /**

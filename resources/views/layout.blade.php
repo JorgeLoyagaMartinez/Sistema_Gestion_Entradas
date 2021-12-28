@@ -232,6 +232,7 @@
         <script src="{{ URL::asset('js/main.js') }}"></script>
         <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
+        @yield('js')
 
     </body>
 

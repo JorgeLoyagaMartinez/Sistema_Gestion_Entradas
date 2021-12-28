@@ -3,21 +3,9 @@
 @section('title', 'Eventos')
 
 @section('content')
-    <h1>Gestión de eventos</h1>
-        <h2>Búsqueda de eventos</h2>
-        @if (!$nombre)
-            <h3>{{ 'Resultados para ' . $nombre}}</h3>
-        @else 
-            <h3>Todos los eventos</h3>
-        @endif
-
-        <a href='{{ route('eventos.create')}}'>Crear Evento</a>
-        <a href='{{ route('categorias', 'cumbia') }}'>Cumbia</a>
-
-        <form action="{{ route('eventos.index')}}" method="GET">
-            <input type="text" class="form-control" id="nombre" aria-describedby="search" name='nombre'>
-            <button type="submit" class="btn btn-primary">Buscar</button>
-        </form>
+   
+       
+    {{-- <h3>{{ $evento->categoria }}</h3> --}}
 
         <section class="d-flex flex-wrap m-2">
             @forelse ($eventos as $evento)
