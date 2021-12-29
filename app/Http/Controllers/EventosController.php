@@ -26,10 +26,16 @@ class EventosController extends Controller
             //$busqueda = 'Todos los eventos';
             $eventos = Evento::get();
         }
-
+        $eventoDestacado = Evento::where('destacado', "=", 1)->get();
+        if(!$eventoDestacado->isEmpty()) {
+            $dest = $eventoDestacado[0];
+        } else {
+            $dest = $eventos[0];
+        }
         $parametro = [
             'eventos' => $eventos,
-            'nombre' => $nombre
+            'nombre' => $nombre,
+            'destacado' => $dest
         ];
 
         return view('inicio', $parametro);
