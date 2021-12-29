@@ -108,8 +108,10 @@ const productList = (product)=>{
 };
 
 const totalItems = () => {
+  const cartIcon = document.querySelector('#cartIcon');
   const cartItems = JSON.parse(localStorage.getItem('tickets'));
-  return cartItems.reduce((ac, item) => ac + item.quantity, 0);
+  console.log (cartItems.reduce((ac, item) => ac + item.quantity, 0))
+  cartIcon.innerHTML = cartItems.reduce((ac, item) => ac + item.quantity, 0);
 }
 
 const showProducts = (productArray) => {
@@ -118,8 +120,10 @@ const showProducts = (productArray) => {
   if (products.length !== 0) {
     productsDiv.innerHTML = productList(productArray);
     totalList.innerHTML = showTotal();
+    totalItems();
   } else {
     productsDiv.innerHTML = 'No hay productos en el carrito';
+    totalItems();
   }
 };
 
