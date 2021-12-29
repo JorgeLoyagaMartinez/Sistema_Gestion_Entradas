@@ -17,8 +17,6 @@ class EventosController extends Controller
     {
         $nombre = $request->get('nombre');
 
-
-
         if ($request->has('nombre')){
             //$busqueda = 'Resultados para: '.$nombre;
             $eventos = Evento::where('nombre', 'like', '%'.$nombre.'%')->get();
@@ -32,10 +30,13 @@ class EventosController extends Controller
         } else {
             $dest = $eventos[0];
         }
+        $eventosDestacadosDos = Evento::orderBy('fecha', 'desc')->take(2)->get();
+        
         $parametro = [
             'eventos' => $eventos,
             'nombre' => $nombre,
-            'destacado' => $dest
+            'destacado' => $dest,
+            "destacadosAbajo" => $eventosDestacadosDos
         ];
 
         return view('inicio', $parametro);
