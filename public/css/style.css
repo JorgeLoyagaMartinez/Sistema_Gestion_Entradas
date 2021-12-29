@@ -991,16 +991,6 @@ ol {
     position: relative;
 }
 
-.breadcrumb__option a:after {
-    position: absolute;
-    right: -12px;
-    top: 13px;
-    height: 1px;
-    width: 10px;
-    background: #ffffff;
-    content: "";
-}
-
 .breadcrumb__option span {
     display: inline-block;
     font-size: 16px;

@@ -31,11 +31,8 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="breadcrumb__text">
-                            <h2 style="color: #a923ca;">{{$evento->nombre}}</h2>
-                            <div class="breadcrumb__option">
-                                <a href="{{ route('inicio') }}">Inicio</a>
-                                <span>Detalle</span>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -48,8 +45,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="container event-description">
+                        <h2 class="my-3" style="color: #a923ca;">{{$evento->nombre}}</h2>
+                    
                         <p>
-                            <strong>{{$evento->nombre}}:</strong>{{ $evento->descripcion}}
+                            {{ $evento->descripcion}}
                         </p>
                         <p class="cast">
                             <strong>Categoria: </strong>{{ $evento->categoria}}
@@ -92,12 +91,12 @@
 
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingThree">
-                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <a class="horarios collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                         {{ $evento->horario}} <span class="sr-only">horas</span>
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                 </div>
-                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body">
                                         <div class="container container-title">
                                             <h3 class="hora text-dark">{{ $evento->horario}}<span class="sr-only">horas</span></h3>
