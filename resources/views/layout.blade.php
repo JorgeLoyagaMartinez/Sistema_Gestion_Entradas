@@ -87,9 +87,9 @@
                                         <button onclick="showLogin()">Login</button>
                                     </div>
                                     <div id="login-div">
-                                        
+
                                         <div class="container-login">
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -206,6 +206,7 @@
         <script src="{{ URL::asset('js/main.js') }}"></script>
         <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
+        <script src="{{ URL::asset("js/checkout.js") }}"></script>
         @yield('js')
 
     </body>

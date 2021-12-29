@@ -31,7 +31,7 @@ class EventosController extends Controller
             $dest = $eventos[0];
         }
         $eventosDestacadosDos = Evento::orderBy('fecha', 'desc')->take(2)->get();
-        
+
         $parametro = [
             'eventos' => $eventos,
             'nombre' => $nombre,

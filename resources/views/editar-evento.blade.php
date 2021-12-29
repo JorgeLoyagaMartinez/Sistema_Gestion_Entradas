@@ -7,11 +7,11 @@
 
     <div id="section-form">
         <h3 id="subtitle-form">Edicion de eventos</h3>
-        <form action="{{ route('eventos.update')}}" method="POST" id="crear-evento" autocomplete="off">
+        <form action="{{ route('eventos.update', ['evento' => $evento]) }}" method="POST" id="crear-evento" autocomplete="off">
             @csrf @method('PUT')
             <div>
               <label for="nombre" id="form-label">Nombre:</label>
-              <input type="text" id="form-control" id="nombre" name='nombre' placeholder="Nombre del evento" value={{ old('nombre', $evento->nombre) }} required title="Ingresar un nombre">
+              <input type="text" id="form-control" id="nombre" name='nombre' placeholder="Nombre del evento" value={{ old('nombre', $evento->nombre) }}>
             </div>
             <div>
               <label for="descripcion" id="form-label">Descripción:</label>
