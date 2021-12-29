@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', "Pago | Fascket")
+@section('title', "Carrito | Fascket")
 
         @section('content')
        <!-- Hero Section Begin -->
@@ -79,8 +79,4 @@
             </div>
         </section>
         <!-- Shoping Cart Section End -->
-        @endsection
-
-        @section('js')
-            <script src="{{ URL::asset("js/checkout.js") }}"></script>
         @endsection

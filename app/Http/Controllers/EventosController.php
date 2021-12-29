@@ -124,7 +124,6 @@ class EventosController extends Controller
     {
         $eventos = Evento::where('categoria', '=', $categoria)->get();
         return view('eventos.categorias', ['eventos'=>$eventos]);
-        // cambiar ruta
     }
 
     /**

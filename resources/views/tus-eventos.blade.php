@@ -96,7 +96,7 @@
                                         </ul>
                                     </div>
                                     <div class="product__item__text">
-                                        <h6><a href="{{ route("detalle") }}">{{ $evento->nombre }}</a></h6>
+                                        <h6><a href="{{ route("eventos.show", $evento) }}">{{ $evento->nombre }}</a></h6>
                                     </div>
                                 </div>
                             </div>
