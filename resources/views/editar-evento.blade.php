@@ -3,15 +3,15 @@
 
 @section('content')
 
-    <h1 id="title-form">Crear evento</h1>
+    <h1 id="title-form">Editar evento</h1>
 
     <div id="section-form">
-        <h3 id="subtitle-form">Registro de eventos</h3>
-        <form action="{{ route('eventos.store')}}" method="POST" id="crear-evento" autocomplete="off">
-            @csrf
+        <h3 id="subtitle-form">Edicion de eventos</h3>
+        <form action="{{ route('eventos.update')}}" method="POST" id="crear-evento" autocomplete="off">
+            @csrf @method('PUT')
             <div>
               <label for="nombre" id="form-label">Nombre:</label>
-              <input type="text" id="form-control" id="nombre" name='nombre' placeholder="Nombre del evento" required title="Ingresar un nombre">
+              <input type="text" id="form-control" id="nombre" name='nombre' placeholder="Nombre del evento" value={{ old('nombre', $evento->nombre) }} required title="Ingresar un nombre">
             </div>
             <div>
               <label for="descripcion" id="form-label">Descripción:</label>
@@ -65,7 +65,7 @@
                 <input type="number" id="form-control" aria-label="precio" name='precio' placeholder="Indicar precio">
             </div>
             <div>
-              <button type="submit" id="btn-crear">Registrar evento</button>
+              <button type="submit" id="btn-crear">Editar evento</button>
             </div>
           </form>
     </div>

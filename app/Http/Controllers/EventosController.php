@@ -117,7 +117,7 @@ class EventosController extends Controller
      */
     public function edit(Evento $evento)
     {
-        return view('eventos.edit', ['evento'=>$evento]);
+        return view('editar-evento', ['evento'=>$evento]);
     }
 
 
@@ -149,6 +149,7 @@ class EventosController extends Controller
            ]);
 
            return redirect()->route('eventos.show', $evento);
+        //    return request();
     }
 
     /**

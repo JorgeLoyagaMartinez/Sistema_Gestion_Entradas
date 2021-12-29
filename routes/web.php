@@ -49,6 +49,10 @@ Route::get('/crear-evento', [EventosController::class, 'create'])->name('crear-e
 
 Route::post('/admin', [EventosController::class, 'store'])->name('admin');
 
+Route::get('/eventos/{id}/editar', [EventosController::class, 'edit'])->name('editar-evento');
+
+Route::put('/eventos/{id}', [EventosController::class, 'update'])->name('evento-editado');
+
 Route::get('/conocenos', function () {
     return view('conocenos');
 })->name('conocenos');

@@ -680,19 +680,19 @@ ol {
 
 #section-form {
     text-align: center;
+    margin: 20px;
 }
 
 #title-form {
     text-align: center;
     font-size: 5em;
     color: #000;
+    font-weight: bold;
+
 }
 
 #crear-evento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: inline-block;
 }
 
 #crear-evento div {
@@ -701,21 +701,46 @@ ol {
 
 #subtitle-form {
     color: #a923ca;
-    text-decoration: underline;
 }
 
 #crear-evento #form-label {
-    font-size: 20px;
-    margin: 20px 10px;
+    text-align: left;
+    display: inline-block;
+    width: 100px;
+    font-size: 19px;
+    margin: 15px 30px 15px 0;
 }
 
 #crear-evento #form-control {
-    font-size: 20px;
-    margin: 20px 10px;
+    width: 250px;
+    font-size: 19px;
+    margin: 15px 30px 15px 0;
+    border: none;
+    border-bottom: 1px solid #a923ca;
+}
+
+#crear-evento #categoria, #estado, #horario {
+    font-size: 19px;
 }
 
 #crear-evento #descripcion {
-    width: 200px;
+    width: 250px;
+    resize: none;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #a923ca;
+}
+
+#btn-crear {
+    background-color: #a923ca;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 10px;
+    border: none;
+}
+
+#btn-crear:hover {
+    background-color: #c63ce9;
 }
 
 /*---------------------
