@@ -29,6 +29,8 @@
     $('.set-bg').each(function () {
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
+        $(this).css('height', '600px');
+        $(this).css('background-position-y', 'center');
     });
 
     //Humberger Menu
