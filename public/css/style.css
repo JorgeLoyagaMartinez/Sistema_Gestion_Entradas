@@ -1005,6 +1005,13 @@ ol {
 .from-blog__title {
     margin-bottom: 70px;
 }
+/*---------------------
+  Portadas
+-----------------------*/
+
+.portada-detalle {
+    height: 600px;
+}
 
 /*---------------------
   Breadcrumb
