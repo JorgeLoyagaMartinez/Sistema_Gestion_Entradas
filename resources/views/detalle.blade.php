@@ -26,7 +26,7 @@
         <!-- Hero Section End -->
 
         <!-- Breadcrumb Section Begin -->
-        <section class="breadcrumb-section set-bg" data-setbg="{{ URL::asset($evento->portada) }}">
+        <section class="breadcrumb-section set-bg portada-detalle" data-setbg="{{ URL::asset($evento->portada) }}">
         </section>
         <!-- Breadcrumb Section End -->
 
