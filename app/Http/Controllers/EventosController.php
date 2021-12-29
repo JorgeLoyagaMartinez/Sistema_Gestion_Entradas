@@ -32,7 +32,7 @@ class EventosController extends Controller
             'nombre' => $nombre
         ];
 
-        return view('eventos.eventos', $parametro);
+        return view('inicio', $parametro);
 
     }
 

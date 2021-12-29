@@ -11,10 +11,10 @@
 
 .card {
     background-color: #fff;
-    width: 280px;
-    border-radius: 33px;
+    width: 545px;
+    border-radius: 26px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 2rem !important
+    padding: 2rem !important;
 }
 
 .top-container {

@@ -21,6 +21,81 @@
         </section>
         <!-- Breadcrumb Section End -->
 
+        
+        <!-- Contact Section Begin -->
+        <section class="contact spad">
+            <div class="container text-center mt-5 mb-2">
+                </div>
+            <div class="container mt-3">
+                <div class="row">
+                    
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/2WqnBw4/20210907-195711.jpg" width="90">
+                            <h5 class="mt-3 name">Jorge Loyaga</h5><span class="work d-block">Backend</span>
+                            <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                            <div class="mt-4">
+                                <h6 class="v-profile">Ver Perfil</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/oJmLthK.jpg" width="90">
+                            <h5 class="mt-3 name">Agustin Rojas</h5><span class="work d-block">Frontend</span>
+                            <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                            <div class="mt-4">
+                                <h6 class="v-profile">Ver Perfil</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/Fz1hgYL/21-07-01-00-50-17-827.jpg" width="90">
+                            <h5 class="mt-3 name">Valeria Silveira</h5><span class="work d-block">Backend</span>
+                            <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                            <div class="mt-4">
+                                <h6 class="v-profile">Ver Perfil</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/PhTsfBp/IMG-6390.jpg" width="90">
+                            <h5 class="mt-3 name">Felipe Fernandez</h5><span class="work d-block">Frontend</span>
+                            <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                            <div class="mt-4">
+                                <h6 class="v-profile">Ver Perfil</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/JQ1Z007/Pablo-PNG-06-06-min-min.png" width="90">
+                            <h5 class="mt-3 name">Pablo Paladino Costa</h5><span class="work d-block">Frontend</span>
+                            <div class="mt-4 about"><span>Diseño grafico, música y tecnología. Tres cosas&nbsp; que siempre me acompañan y me apasionan.</span></div>
+                            <div class="mt-4">
+                                <h6 class="v-profile">
+                                    <a name="Linkedin Pablo" href="https://www.linkedin.com/in/pablo-costa-2bb71a125">Ver Perfil</a></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.ibb.co/Yk07KnT/Whats-App-Image-2021-07-07-at-09-19-172.jpg" width="90">
+                            <h5 class="mt-3 name">Micaela Outon</h5><span class="work d-block">Frontend</span>
+                            <div class="mt-4 about"><span>Diseño grafico, música y tecnología. Tres cosas&nbsp; que siempre me acompañan y me apasionan.</span></div>
+                            <div class="mt-4">
+                                <h6 class="v-profile">
+                                    <a name="Linkedin Micaela" href="https://www.linkedin.com/in/pablo-costa-2bb71a125">Ver Perfil</a></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
         <!-- Contact Section Begin -->
         <section class="contact spad">
             <div class="container">
