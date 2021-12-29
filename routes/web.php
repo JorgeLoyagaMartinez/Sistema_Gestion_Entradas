@@ -46,10 +46,6 @@ Route::get('/conocenos', function () {
     return view('conocenos');
 })->name('conocenos');
 
-Route::get('/detalle', function () {
-    return view('detalle');
-})->name('detalle');
-
 Route::get('/carrito', function () {
     return view('carrito');
 })->name('carrito');
@@ -78,6 +74,8 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+Route::get('/eventos/{id}', [EventosController::class, 'show'])->name('detalles-eventos');
+
 Route::resource('eventos', EventosController::class);
 Route::resource('tickets', TicketsController::class);
 Route::resource('usuarios', UsuariosController::class);
@@ -85,3 +83,4 @@ Route::resource('usuarios', UsuariosController::class);
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
