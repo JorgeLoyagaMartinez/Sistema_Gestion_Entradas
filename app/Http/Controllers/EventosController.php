@@ -69,7 +69,7 @@ class EventosController extends Controller
      */
     public function create()
     {
-        return view('eventos.create');
+        return view('crear-evento');
     }
 
     /**
@@ -92,7 +92,7 @@ class EventosController extends Controller
             'estado' => $request->get('estado')
         ]);
 
-        return redirect()->route('eventos.eventos');
+        return redirect()->route('crear-eventos');
     }
 
     /**
@@ -123,7 +123,7 @@ class EventosController extends Controller
     public function categoryFilter($categoria)
     {
         $eventos = Evento::where('categoria', '=', $categoria)->get();
-        return view('eventos.categorias', ['eventos'=>$eventos]);
+        return view('categorias-filtradas', ['eventos'=>$eventos]);
     }
 
     /**

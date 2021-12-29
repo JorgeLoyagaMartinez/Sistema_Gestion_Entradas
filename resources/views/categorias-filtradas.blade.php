@@ -64,11 +64,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-7">
-                            @if ($nombre)
-                                <h3 id="search-h3">{{ 'Resultados para: ' . $nombre}}</h3>
-                            @else
-                                <h3 id="search-h3">Todos los eventos</h3>
-                            @endif
+                            {{-- <h3 id="search-h3">{{ 'Resultados para: ' . $eventos->categoria}}</h3> --}}
                         <div class="filter__item">
                             <div class="row">
                                 <div class="col-lg-4 col-md-5">

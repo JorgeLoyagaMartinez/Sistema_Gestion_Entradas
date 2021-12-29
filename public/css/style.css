@@ -678,6 +678,46 @@ ol {
     margin-bottom: 25px;
 }
 
+#section-form {
+    text-align: center;
+}
+
+#title-form {
+    text-align: center;
+    font-size: 5em;
+    color: #000;
+}
+
+#crear-evento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#crear-evento div {
+    display: flex;
+}
+
+#subtitle-form {
+    color: #a923ca;
+    text-decoration: underline;
+}
+
+#crear-evento #form-label {
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+#crear-evento #form-control {
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+#crear-evento #descripcion {
+    width: 200px;
+}
+
 /*---------------------
   Categories
 -----------------------*/

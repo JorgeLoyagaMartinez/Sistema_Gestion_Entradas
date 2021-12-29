@@ -38,9 +38,14 @@ Route::resource('usuarios',UsuarioController::class)->only('destroy','update');*
 // Route::get('/clientes', [ClientesController::class, 'index'])->name("listadito");
 
 Route::get('/', [EventosController::class, 'index'])->name('inicio');
-Route::get('/tus-eventos/{categoria}', [EventosController::class, 'categoryFilter'])->name('categorias');
 
 Route::get('/tus-eventos', [EventosController::class, 'Listado'])->name('tus-eventos');
+
+Route::get('/tus-eventos/{categoria}', [EventosController::class, 'categoryFilter'])->name('categorias');
+
+Route::get('/eventos/{id}', [EventosController::class, 'show']);
+
+Route::get('/crear-evento', [EventosController::class, 'store']);
 
 Route::get('/conocenos', function () {
     return view('conocenos');
@@ -74,13 +79,13 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
-Route::get('/eventos/{id}', [EventosController::class, 'show']);
+Route::get('/admin', function () {
+    return view('perfil-admin');
+})->name('admin');
+
 
 Route::resource('eventos', EventosController::class);
 Route::resource('tickets', TicketsController::class);
 Route::resource('usuarios', UsuariosController::class);
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
