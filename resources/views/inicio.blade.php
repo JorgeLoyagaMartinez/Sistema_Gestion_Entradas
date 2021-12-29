@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9" style="padding: 0px" >
-                        <img src="{{ $destacado->portada }}" alt="">
+                        <a  href="{{ route("eventos.show", $destacado) }}"> <img src="{{ $destacado->portada }}" alt=""> </a>
                     </div>
                 </div>
             </div>
@@ -60,19 +60,20 @@
  
         <!-- Second Banner Begin -->
         <div class="banner">
+            <h2 class="prox-eventos">Proximos eventos</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="banner__pic">
-                            <a href="">
-                                <img src="{{ URL::asset('img/hero/1.png') }}" alt="">
+                        <div class="hero__text my-5 text-center">
+                            <a href="{{ route("eventos.show", $destacadosAbajo[0]) }}">
+                                <img src="{{ $destacadosAbajo[0]->portada }}" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="banner__pic">
-                            <a href="">
-                                <img src="{{ URL::asset('img/hero/2.png') }}" alt="">
+                        <div class="hero__text my-5 text-center">
+                            <a href="{{ route("eventos.show", $destacadosAbajo[1]) }}">
+                                <img src="{{ $destacadosAbajo[1]->portada }}" alt="">
                             </a>
                         </div>
                     </div>
