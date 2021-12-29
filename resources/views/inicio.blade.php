@@ -6,13 +6,16 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="hero__item set-bg" data-setbg="{{ URL::asset('img/hero/hola.jpeg') }}">
-                        <div class="hero__text">
+                    <div class="col-lg-3 p-5 bg-white" style="padding: 0px" data-setbg="{{ URL::asset('img/hero/hola.jpeg') }}">
+                        <div class="hero__text my-5">
                             <span>EN VIVO EN EL HIPODROMO<br />DE SAN ISIDRO</span>
                             <h2>BANDALOS<br />CHINOS</h2>
                             <p>ULTIMAS ENTRADAS DISPONIBLES</p>
                             <a href="" class="primary-btn">COMPRA AHORA</a>
                         </div>
+                    </div>
+                    <div class="col-lg-9" style="padding: 0px" >
+                        <img src="{{ URL::asset('img/hero/chabones.png') }}" alt="">
                     </div>
                 </div>
             </div>
