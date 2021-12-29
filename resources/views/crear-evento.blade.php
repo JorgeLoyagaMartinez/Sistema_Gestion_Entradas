@@ -11,7 +11,7 @@
             @csrf
             <div>
               <label for="nombre" id="form-label">Nombre:</label>
-              <input type="text" id="form-control" id="nombre" name='nombre' placeholder="Nombre del evento">
+              <input type="text" id="form-control" id="nombre" name='nombre' placeholder="Nombre del evento" required >
             </div>
             <div>
               <label for="descripcion" id="form-label">Descripción:</label>

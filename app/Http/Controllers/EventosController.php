@@ -92,7 +92,8 @@ class EventosController extends Controller
             'estado' => $request->get('estado')
         ]);
 
-        return redirect()->route('crear-eventos');
+        return redirect()->route('admin');
+        // return request();
     }
 
     /**

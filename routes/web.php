@@ -43,9 +43,11 @@ Route::get('/tus-eventos', [EventosController::class, 'Listado'])->name('tus-eve
 
 Route::get('/tus-eventos/{categoria}', [EventosController::class, 'categoryFilter'])->name('categorias');
 
-Route::get('/eventos/{id}', [EventosController::class, 'show']);
+Route::get('/eventos/{id}', [EventosController::class, 'show'])->name('detalle');
 
-Route::get('/crear-evento', [EventosController::class, 'store']);
+Route::get('/crear-evento', [EventosController::class, 'create'])->name('crear-evento');
+
+Route::post('/admin', [EventosController::class, 'store'])->name('admin');
 
 Route::get('/conocenos', function () {
     return view('conocenos');
