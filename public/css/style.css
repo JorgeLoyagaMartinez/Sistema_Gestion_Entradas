@@ -1644,10 +1644,9 @@ ol {
 }
 
 .fecha {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #6ab963;
     margin-bottom: 1em;
-    text-decoration: underline;
 }
 
 .listado {
@@ -3539,4 +3538,43 @@ ol {
     .blog__details__hero__text h2 {
         font-size: 24px;
     }
+}
+
+.btn-outline {
+    background-color: white;
+    border: 2px solid #a923ca;
+    color: #a923ca;
+}
+.detalleCantidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.detalleCantidad input {
+    width: 60px;
+}
+.detalleCantidad p {
+    margin: 0;
+}
+
+.hideMessage {
+    display: none;
+}
+
+.showMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.showMessage a {
+    align-self: center;
+    width: fit-content;
+}
+.showMessage p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6ab963;
 }

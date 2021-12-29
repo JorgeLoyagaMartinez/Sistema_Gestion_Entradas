@@ -26,7 +26,7 @@
     <!-- Hero Section End -->
 
         <!-- Breadcrumb Section Begin -->
-        <section class="breadcrumb-section set-bg" data-setbg="{{ URL::asset('img/breadcrumb.jpg') }}">
+        <section class="breadcrumb-section set-bg" data-setbg="{{ URL::asset('img/bannereventos.png') }}">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -57,17 +57,7 @@
                             <a href="{{ route('inicio') }}" class="primary-btn cart-btn">CONTINUAR COMPRANDO</a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="shoping__continue">
-                            {{-- <div class="shoping__discount">
-                                <h5>Codigo de descuento</h5>
-                                <form action="#">
-                                    <input type="text" placeholder="Enter your coupon code">
-                                    <button type="submit" class="site-btn" onclick='descuento()'>APLICAR CUPÓN</button>
-                                </form>
-                            </div> --}}
-                        </div>
-                    </div>
+                    <div class="col-lg-6"></div>
                     <div class="col-lg-6">
                         <div class="shoping__checkout">
                             <h5>Total</h5>
