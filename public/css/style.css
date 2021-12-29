@@ -1031,16 +1031,6 @@ ol {
     position: relative;
 }
 
-.breadcrumb__option a:after {
-    position: absolute;
-    right: -12px;
-    top: 13px;
-    height: 1px;
-    width: 10px;
-    background: #ffffff;
-    content: "";
-}
-
 .breadcrumb__option span {
     display: inline-block;
     font-size: 16px;
@@ -1684,10 +1674,32 @@ ol {
 }
 
 .card {
-    width: 500px;
-    margin: 0 5em;
+    width: 543px;
+    margin: 0 0em;
     font-size: 1.5em;
 }
+
+.ticketcard{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #6f3e973d;
+    background-clip: border-box;
+    border: 15px solid rgb(113 45 143 / 13%);
+    border-radius: 2.25rem;
+    justify-content: center;
+    margin: 23px auto;
+}
+
+.fechaevento {
+    font-size: 2em;
+    color: #5f3567;
+    margin-bottom: 0em;
+    }
 
 /*---------------------
   Shop Details

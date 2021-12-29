@@ -30,8 +30,7 @@
         <link rel="stylesheet" href="{{ URL::asset('css/slicknav.min.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" type="text/css">
         <link rel="stylesheet" href="{{ URL::asset('css/login.css') }}" type="text/css">
-        <link rel="stylesheet" href="{{ URL::asset('css/loginregistroestilo.css') }}" type="text/css">
-        <link rel="stylesheet" href="{{ URL::asset('css/conocenos.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ URL::asset('css/loginyregistro.css') }}" type="text/css">
     </head>
 
     <body>
@@ -50,8 +49,9 @@
             <div class="humberger__menu__cart">
                 <ul>
                     <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span id='cartIcon'></span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                 </ul>
+                <div class="header__cart__price">item: <span>$1500.00</span></div>
             </div>
             <div class="humberger__menu__widget">
                 <div class="header__top__right__auth">
@@ -87,35 +87,9 @@
                                         <button onclick="showLogin()">Login</button>
                                     </div>
                                     <div id="login-div">
-                                        <button onclick="closeLogin()" class="close">X</button>
+                                        
                                         <div class="container-login">
-                                            <h3>Login Via</h3>
-                                            <div class="social-buttons">
-                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                            </div>
-                                            <p>Or</p>
-                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                                <div class="form-group">
-                                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                    <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <input type="checkbox">
-                                                    <label>keep me logged-in</label>
-                                                </div>
-                                            </form>
-                                            <div class="bottom text-center">
-                                                <p>New here ?</p> <a href="#"><b>Join Us</b></a>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -147,8 +121,9 @@
                             </div>
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
-                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span class="text-light" id='cartIcon'></span></a></li>
+                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
                             </ul>
+                            <div class="header__cart__price">item: <span>$1500.00</span></div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +206,7 @@
         <script src="{{ URL::asset('js/main.js') }}"></script>
         <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
-        <script src="{{ URL::asset("js/checkout.js") }}"></script>
+        @yield('js')
 
     </body>
 

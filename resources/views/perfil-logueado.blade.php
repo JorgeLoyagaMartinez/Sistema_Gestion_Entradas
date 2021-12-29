@@ -13,8 +13,9 @@
     background-color: #fff;
     width: 545px;
     border-radius: 26px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     padding: 2rem !important;
+    margin: 39px auto;
 }
 
 .top-container {
@@ -24,7 +25,7 @@
 
 .profile-image {
     border-radius: 10px;
-    border: 2px solid #5957f9
+    border: 2px solid #a923ca
 }
 
 .name {
@@ -48,11 +49,11 @@
 }
 
 .middle-container:hover {
-    border: 1px solid #5957f9
+    border: 1px solid #a923ca
 }
 
 .dollar-div {
-    background-color: #5957f9;
+    background-color: #a923ca;
     padding: 12px;
     border-radius: 10px
 }
@@ -70,7 +71,7 @@
 
 .dollar {
     font-size: 16px !important;
-    color: #5957f9 !important;
+    color: #a923ca !important;
     font-weight: bold !important
 }
 
@@ -81,7 +82,7 @@
 }
 
 .amount {
-    color: #5957f9;
+    color: #a923ca;
     font-size: 16px;
     font-weight: bold
 }
@@ -93,7 +94,7 @@
 }
 
 .recent-border {
-    border-left: 2px solid #5957f9;
+    border-left: 2px solid #a923ca;
     display: flex;
     align-items: center
 }
@@ -105,7 +106,7 @@
 .recent-orders {
     font-size: 16px;
     font-weight: 700;
-    color: #5957f9;
+    color: #a923ca;
     margin-left: 2px
 }
 
