@@ -53,8 +53,8 @@
                 </ul>
             </div>
             <div class="humberger__menu__widget">
-                <div class="header__top__right__auth">
-                    <a href="#"><i class="fa fa-user"></i> Login</a>
+                <div class="header__top__right__auth" id="loginBtnNav">
+                    <a class="link-login" href="{{ route('login')}}" ><i class="fa fa-user"></i> Login</a>
                 </div>
             </div>
             <nav class="humberger__menu__nav mobile-menu">
@@ -81,8 +81,8 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-6">
                             <div class="header__top__right">
-                                <div id="login">
-                                    <a id="link-login" href="{{ route("login") }}"><i class="fas fa-user-circle"></i>Perfil</a>
+                                <div id="loginBtnHeader">
+                                    <a class="link-login" href="{{ route('login')}}" ><i class="fa fa-user"></i> Login</a>
                                 </div>
                             </div>
                         </div>
