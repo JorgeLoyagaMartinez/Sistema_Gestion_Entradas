@@ -86,7 +86,7 @@ const totalItems = () => {
   const cartItems = JSON.parse(localStorage.getItem('tickets'));
   console.log(cartItems)
   console.log (cartItems.reduce((ac, item) => ac + item.quantity, 0))
-  cartIcon.innerHTML = cartItems.reduce((ac, item) => ac + item.quantity, 0);
+  cartIcon.textContent = cartItems.reduce((ac, item) => ac + item.quantity, 0);
 }
 
 // Renderizar HTMl

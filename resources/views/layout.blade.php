@@ -49,9 +49,8 @@
             <div class="humberger__menu__cart">
                 <ul>
                     <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span onload="totalItems()">3</span></a></li>
                 </ul>
-                <div class="header__cart__price">item: <span>$1500.00</span></div>
             </div>
             <div class="humberger__menu__widget">
                 <div class="header__top__right__auth">
@@ -121,9 +120,8 @@
                             </div>
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
-                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
+                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span id="cartIcon" onload="totalItems()"></span></a></li>
                             </ul>
-                            <div class="header__cart__price">item: <span>$1500.00</span></div>
                         </div>
                     </div>
                 </div>
@@ -146,8 +144,8 @@
                                 <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
                             </div>
                             <ul>
-                                <li>Dirección: Calle 123 Buenos Aires</li>
-                                <li>Telefono: 0800-888-888</li>
+                                <li>Dirección: Mozart 2300, Buenos Aires.</li>
+                                <li>Telefono: (5411) 4867-7500.</li>
                                 <li>Email: Fascket@soporte.com</li>
                             </ul>
                         </div>
