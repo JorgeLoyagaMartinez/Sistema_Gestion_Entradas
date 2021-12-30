@@ -171,8 +171,8 @@
                                 <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
                             </div>
                             <ul>
-                                <li>Dirección: Calle 123 Buenos Aires</li>
-                                <li>Telefono: 0800-888-888</li>
+                                <li>Dirección: Mozart 2300, Buenos Aires.</li>
+                                <li>Telefono: (5411) 4867-7500.</li>
                                 <li>Email: Fascket@soporte.com</li>
                             </ul>
                         </div>
