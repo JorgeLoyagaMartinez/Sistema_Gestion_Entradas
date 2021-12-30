@@ -89,13 +89,9 @@
                                 <div class="checkout__order">
                                     <h4>Tu orden</h4>
                                     <div class="checkout__order__products">Productos <span>Total</span></div>
-                                    <ul>
-                                        <li>Lorem ipsum <span>$**.**</span></li>
-                                        <li>Lorem ipsum  <span>$***.**</span></li>
-                                        <li>Lorem ipsum  <span>$**.**</span></li>
-                                    </ul>
-                                    <div class="checkout__order__subtotal">Subtotal <span>$***.**</span></div>
-                                    <div class="checkout__order__total">Total <span>$***.**</span></div>
+                                    <ul id="checkout__order"></ul>
+                                    <div class="checkout__order__subtotal"></div>
+                                    <div class="checkout__order__total"></div>
                                     <a href="{{ route("eticket") }}" class="site-btn">PAGAR</a>
                                 </div>
                             </div>
@@ -105,4 +101,8 @@
             </div>
         </section>
         <!-- Checkout Section End -->
+        <script src="{{ URL::asset("js/pago.js") }}"></script>
+        <script>
+            window.onload = showOrder();
+        </script>
         @endsection
