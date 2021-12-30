@@ -54,12 +54,6 @@
                         </div>
                     </div>
                 </div>
-                <form method="POST">
-                    @csrf
-                    <input type="email" name="email" id="email" placeholder="email">
-                    <input type="password" name="password" id="password" placeholder="password">
-                    <button type="submit">iniciar sesion</button>
-                </form>
                 <div class="col-md-6 col-sm-12 pt-sm-3 showMessage m-auto">
                     <h2 class="h4 mb-3">Sin cuenta? Registrate</h2>
                     <p class="text-muted mb-4">Estas sólo a minutos de adquirir la entrada para tu evento</p>
