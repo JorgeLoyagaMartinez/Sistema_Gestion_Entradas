@@ -33,7 +33,7 @@
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/7kLjDyV/perfil.jpg"  width="90">
                             <h5 class="mt-3 name">Agustin Rojas</h5><span class="work d-block">Frontend</span>
-                            <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                            <div class="mt-4 about"><span>Estudiante de ingenieria en informatica, apasionado por la tecnologia y la musica.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
                                 <a name="Linkedin Agustin" href="https://www.linkedin.com/in/rojasagusf/">Ver Perfil</a></h6>
@@ -91,7 +91,7 @@
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/q9h2N3H/Whats-App-Image-2021-12-29-at-02-10-31.jpg" width="90">
                             <h5 class="mt-3 name">Jorge Loyaga</h5><span class="work d-block">Backend</span>
-                            <div class="mt-4 about"><span>Estudiante de Ing. Sistemas y Tecnico en Computacion. Apasionado por la industria informatica. Me gusta el cine,&nbsp;&nbsp; la musica y los deportes electronicos.</span></div>
+                            <div class="mt-4 about"><span>Estudiante de Ing. Sistemas y Tecnico en Computacion. Apasionado por la industria informatica. Me gusta el cine, la musica y los deportes electronicos.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
                                 <a name="Linkedin Jorge" href="https://www.linkedin.com/in/jorge-loyaga-martinez-62855b149">Ver Perfil</a></h6>
