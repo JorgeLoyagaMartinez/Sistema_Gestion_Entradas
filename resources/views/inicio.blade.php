@@ -42,7 +42,7 @@
                                     <div class="categories__slider owl-carousel">
                                         @foreach ($eventos as $item)
                                                 <div class="col-lg-3">
-                                                    <div class="categories__item set-bg" data-setbg="{{ $item->portada }}">
+                                                    <div class="categories__item set-bg" data-setbg="{{ $item->imagenes }}">
                                                         <h5><a href="{{ route("eventos.show", $item) }}">{{ $item->nombre }}</a></h5>
                                                     </div>
                                                 </div>
