@@ -41,7 +41,7 @@
                             {{ $evento->descripcion}}
                         </p>
                         <div style='display: none' id='eventoStock'>{{$evento->stock}}</div>
-                        <div style='display: none' id="eventoPortada">{{$evento->portada}}</div>
+                        <div style='display: none' id="eventoPortada">{{$evento->imagenes}}</div>
                         <p class="cast">
                             <strong>Categoria: </strong>{{ $evento->categoria}}
                         </p>

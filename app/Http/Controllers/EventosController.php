@@ -91,12 +91,14 @@ class EventosController extends Controller
             'nombre' => $request->get('nombre'),
             'descripcion' => $request->get('descripcion'),
             'portada' => $request->get('portada'),
+            'imagenes' => $request->get('imagenes'),
             'fecha' => $request->get('fecha'),
             'lugar' => $request->get('lugar'),
             'horario' => $request->get('horario'),
             'precio' => $request->get('precio'),
             'stock' => $request->get('stock'),
-            'estado' => $request->get('estado')
+            'estado' => $request->get('estado'),
+            'destacado' => $request->get('destacado')
         ]);
 
         return redirect()->route('admin');
@@ -147,12 +149,14 @@ class EventosController extends Controller
             'nombre' => request('nombre'),
             'descripcion' => request('descripcion'),
             'portada' => request('portada'),
+            'imagenes' => request('imagenes'),
             'fecha' => request('fecha'),
             'lugar' => request('lugar'),
             'horario' => request('horario'),
             'precio' => request('precio'),
             'stock' => request('stock'),
-            'estado' => request('estado')
+            'estado' => request('estado'),
+            'destacado' => request('destacado')
            ]);
 
            return redirect()->route('eventos.show', $evento);
