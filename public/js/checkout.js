@@ -8,11 +8,11 @@ const setCartItems = (id) => {
   const priceString = document.querySelector('#eventoPrecio').textContent;
   const price = Number(priceString.slice(priceString.length - 10, -6));
   const stock = Number(document.querySelector('#eventoStock').textContent);
-  
+
   products.push({
     id,
     name,
-    img, 
+    img,
     price,
     stock,
     quantity: quantityValue ? quantityValue : 1
@@ -35,7 +35,7 @@ const handleDeleteItem = (id) => {
 // HTML a renderizar de carrito
 const productList = (product)=>{
 
-  const productToShow = product.map((item) => 
+  const productToShow = product.map((item) =>
     `<tr>
       <td class="shoping__cart__item">
           <img src=${item.img} alt=${item.name} style="width: 150px; height: 150px; object-fit: cover">
@@ -46,7 +46,7 @@ const productList = (product)=>{
       </td>
       <td class="shoping__cart__quantity">
           <div class="quantity">
-          
+
               <div class="pro-qty">
                   <input type="text" value=${item.quantity}>
               </div>
@@ -110,7 +110,7 @@ const showTotal = () => {
     const calcSubtotal = cartItems.reduce((ac, item) => ac + item.price * item.quantity, 0);
     return calcSubtotal;
   };
-  
+
   const total = () => {
     return subtotal() * 1.21;
   };
@@ -124,7 +124,7 @@ const showTotal = () => {
 // Mensaje agregar al carrito exitoso
 const showMessage = () => {
   const addedSuccess = document.querySelector('.onAdd');
-  console.log(addedSuccess)
+
   addedSuccess.classList.add('showMessage');
 }
 

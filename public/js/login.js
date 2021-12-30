@@ -1,10 +1,14 @@
+const loginSubmit = document.querySelector('#loginSubmit');
 
-let divLogin = document.getElementById("login-div");
-
-function showLogin() {
-    divLogin.style.display = "inline";
+const getUser = (e) => {
+    e.preventDefault();
+    const currentUser = document.querySelector('#userEmail').value;
+    localStorage.setItem('currentUser', currentUser) || '';
+    console.log(currentUser);
 }
 
-function closeLogin() {
-    divLogin.style.display = "none";
-}
+loginSubmit.addEventListener('click', getUser);
+
+
+
+//Boton LogOut-limpiar localstorage

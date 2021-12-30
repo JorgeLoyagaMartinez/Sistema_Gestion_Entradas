@@ -621,7 +621,7 @@ ol {
 }
 
 .hero__search__form form input {
-    width: 70%;
+    width: 100%;
     border: none;
     height: 48px;
     font-size: 16px;
@@ -680,19 +680,19 @@ ol {
 
 #section-form {
     text-align: center;
+    margin: 20px;
 }
 
 #title-form {
     text-align: center;
     font-size: 5em;
     color: #000;
+    font-weight: bold;
+
 }
 
 #crear-evento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: inline-block;
 }
 
 #crear-evento div {
@@ -701,21 +701,46 @@ ol {
 
 #subtitle-form {
     color: #a923ca;
-    text-decoration: underline;
 }
 
 #crear-evento #form-label {
-    font-size: 20px;
-    margin: 20px 10px;
+    text-align: left;
+    display: inline-block;
+    width: 100px;
+    font-size: 19px;
+    margin: 15px 30px 15px 0;
 }
 
 #crear-evento #form-control {
-    font-size: 20px;
-    margin: 20px 10px;
+    width: 250px;
+    font-size: 19px;
+    margin: 15px 30px 15px 0;
+    border: none;
+    border-bottom: 1px solid #a923ca;
+}
+
+#crear-evento #categoria, #estado, #horario {
+    font-size: 19px;
 }
 
 #crear-evento #descripcion {
-    width: 200px;
+    width: 250px;
+    resize: none;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #a923ca;
+}
+
+#btn-crear {
+    background-color: #a923ca;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 10px;
+    border: none;
+}
+
+#btn-crear:hover {
+    background-color: #c63ce9;
 }
 
 /*---------------------
@@ -975,6 +1000,7 @@ ol {
     padding-top: 10px;
     font-size: 3em;
     font-weight: bold;
+    color: #000;
 }
 
 .latest-product__item__text h6 {
@@ -2852,7 +2878,7 @@ ol {
 .map {
     height: 500px;
     position: relative;
-    
+
 }
 
 .map iframe {
@@ -2988,9 +3014,7 @@ ol {
     .header__menu ul li {
         margin-right: 20px;
     }
-    .hero__search__form {
-        width: 490px;
-    }
+
     .hero__categories__all {
         padding: 10px 25px 10px 20px;
     }
@@ -3016,9 +3040,6 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero__categories {
         margin-bottom: 30px;
-    }
-    .hero__search__form {
-        width: 485px;
     }
     .categories__slider.owl-carousel .owl-nav button {
         left: -20px;
@@ -3242,9 +3263,6 @@ ol {
     }
     .hero__search {
         margin-bottom: 30px;
-    }
-    .hero__search__form {
-        width: 100%;
     }
     .hero__search__form form input {
         width: 100%;
@@ -3556,6 +3574,7 @@ ol {
 }
 .detalleCantidad input {
     width: 60px;
+    color: #a923ca;
 }
 .detalleCantidad p {
     margin: 0;
@@ -3574,6 +3593,10 @@ ol {
 .showMessage a {
     align-self: center;
     width: fit-content;
+}
+.showMessage a:hover {
+    background-color: #a923ca;
+    color: white;
 }
 .showMessage p {
     font-size: 16px;
@@ -3609,4 +3632,18 @@ ol {
     -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
     -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
     box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72)
+}
+#link-login {
+    font-family: "Cairo", sans-serif;
+    font-size: 2.5em;
+    color: #000;
+}
+
+#link-login i {
+    margin: 0 10px;
+    font-size: .8em;
+}
+
+#link-login:hover {
+    color: #a923ca;
 }
