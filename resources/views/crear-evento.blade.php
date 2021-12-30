@@ -6,7 +6,6 @@
     <h1 id="title-form">Crear evento</h1>
 
     <div id="section-form">
-        <h3 id="subtitle-form">Registro de eventos</h3>
         <form action="{{ route('eventos.store')}}" method="POST" id="crear-evento" autocomplete="off">
             @csrf
             <div>
@@ -16,6 +15,10 @@
             <div>
               <label for="descripcion" id="form-label">Descripción:</label>
               <textarea class="form-control" id="descripcion" name='descripcion' placeholder="Descripción del evento"></textarea>
+            </div>
+            <div>
+                <label for="nombre" id="form-label">URL de imagen:</label>
+                <input type="text" id="form-control" id="nombre" name='imagenes' placeholder="Nombre del evento">
             </div>
             <div >
               <label for="portada" id="form-label">URL de portada:</label>
@@ -64,7 +67,11 @@
                 <label for="estado" id="form-label">Precio:</label>
                 <input type="number" id="form-control" aria-label="precio" name='precio' placeholder="Indicar precio">
             </div>
-            <div>
+            <div style="display: flex; align-items:center;">
+                <label for="destacado" id="form-label">Destacado:</label>
+                <input name="destacado" id="destacado" type="checkbox" style="cursor: pointer; ">
+            </div>
+            <div class="btn-div-form">
               <button type="submit" id="btn-crear">Registrar evento</button>
             </div>
           </form>

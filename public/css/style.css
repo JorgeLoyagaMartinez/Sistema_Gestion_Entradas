@@ -712,7 +712,7 @@ ol {
 }
 
 #crear-evento #form-control {
-    width: 250px;
+    width: 450px;
     font-size: 19px;
     margin: 15px 30px 15px 0;
     border: none;
@@ -724,11 +724,20 @@ ol {
 }
 
 #crear-evento #descripcion {
-    width: 250px;
+    width: 450px;
     resize: none;
     font-size: 17px;
     border: none;
     border-bottom: 1px solid #a923ca;
+}
+
+#destacado {
+
+}
+
+.btn-div-form {
+    display: flex;
+    justify-content: center;
 }
 
 #btn-crear {

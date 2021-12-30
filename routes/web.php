@@ -3,6 +3,7 @@
 use App\Http\Controllers\EventosController;
 use App\Http\Controllers\TicketsController;
 use App\Http\Controllers\UsuariosController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::resource('eventos', EventosController::class);
@@ -24,6 +25,17 @@ Route::post('/admin', [EventosController::class, 'store'])->name('admin');
 Route::get('/eventos/{evento}/editar', [EventosController::class, 'edit'])->name('eventos.edit');
 
 Route::put('/eventos/{evento}', [EventosController::class, 'update'])->name('evento-editado');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::post('login', function(){
+    $credenciales = request()->only("email", "password");
+    $resultado = Auth::attempt($credenciales);
+
+    var_dump($credenciales);
+});
 
 Route::get('/conocenos', function () {
     return view('conocenos');
@@ -53,9 +65,6 @@ Route::get('/perfil', function () {
     return view('perfil-logueado');
 })->name('perfil-logueado');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
 Route::get('/admin', function () {
     return view('perfil-admin');

@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'Registro | Fascket')
+@section('title', 'Login | Fascket')
 @section('content')
 
 
@@ -27,17 +27,18 @@
                                 </div>
                             </div>
                             <hr>
-                            <h3 class="h6 font-weight-semibold opacity-90 pt-4 pb-2" style="font-size: 15px"><strong>O completa el formulario debajo: </strong></h3>
-                            <form class="needs-validation" novalidate="">
+                            <h3 class="h6 font-weight-semibold opacity-70 pt-4 pb-2" style="font-size: 15px"><strong>O completa el formulario debajo</strong></h3>
+                            <form class="needs-validation" method="POST">
+                                @csrf
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span></div>
-                                    <input class="form-control" type="email" placeholder="Email" required="" value id="userEmail">
-                                    <div class="invalid-feedback">Ingresa un mail válido!</div>
+                                    <input class="form-control" type="text" placeholder="Email" id="userEmail">
+
                                 </div>
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></div>
-                                    <input class="form-control" type="password" placeholder="Password" required="">
-                                    <div class="invalid-feedback">Ingresa una contraseña válida!</div>
+                                    <input class="form-control" type="password" placeholder="Password">
+
                                 </div>
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <div class="custom-control custom-checkbox">
@@ -47,7 +48,7 @@
                                 </div>
                                 <hr class="mt-4">
                                 <div class="text-right pt-4">
-                                    <button class="site-btn primary-btn" type="button" id="loginSubmit" style='cursor: pointer'>Sign In</button>
+                                    <a href="{{ route("inicio") }}" class="site-btn primary-btn" id="loginSubmit" style='cursor: pointer'>Sign In</a>
                                 </div>
                             </form>
                         </div>
@@ -96,36 +97,36 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group text-center">
-                                    <label for="reg-password"style="font-size: 15px">País</label>
-                                    <input class="form-control" type="text" required="" name="pais" id="reg-password">
+                                    <label for="reg-password " style="font-size: 15px">País</label>
+                                    <input class="form-control" type="text" required="" name="pais" id="reg-pais">
                                     <div class="invalid-feedback">Ingresá tu país</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group text-center">
-                                    <label for="reg-password"style="font-size: 15px">Direccion</label>
-                                    <input class="form-control" type="text" required="" name="direccion" id="reg-password">
+                                    <label for="reg-password " style="font-size: 15px">Direccion</label>
+                                    <input class="form-control" type="text" required="" name="direccion" id="reg-direccion">
                                     <div class="invalid-feedback">Ingresá tu direccion</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group text-center">
-                                    <label for="reg-password"style="font-size: 15px">Ciudad</label>
-                                    <input class="form-control" type="text" required="" name="ciudad" id="reg-password">
+                                    <label for="reg-password " style="font-size: 15px">Ciudad</label>
+                                    <input class="form-control" type="text" required="" name="ciudad" id="reg-ciudad">
                                     <div class="invalid-feedback">Ingresa tu ciudad</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group text-center">
-                                    <label for="reg-password"style="font-size: 15px">Provincia</label>
-                                    <input class="form-control" type="text" required="" name="provincia" id="reg-password">
+                                    <label for="reg-password " style="font-size: 15px">Provincia</label>
+                                    <input class="form-control" type="text" required="" name="provincia" id="reg-provincia">
                                     <div class="invalid-feedback">Ingresa tu provincia</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group text-center">
-                                    <label for="reg-password" style="font-size: 15px">Codigo Postal</label>
-                                    <input class="form-control" type="text" required="" name="codigo-postal" id="reg-password">
+                                    <label for="reg-password " style="font-size: 15px">Codigo Postal</label>
+                                    <input class="form-control" type="text" required="" name="codigo-postal" id="reg-codigo-postal">
                                     <div class="invalid-feedback">Ingresa tu codigo postal</div>
                                 </div>
                             </div>

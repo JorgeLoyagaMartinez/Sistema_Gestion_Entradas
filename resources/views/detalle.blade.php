@@ -10,10 +10,6 @@
                         <div class="hero__search">
                             <div class="hero__search__form">
                                 <form action="#">
-                                    <div class="hero__search__categories">
-                                        <p>Todas</p>
-                                        <span class="arrow_carrot-down"></span>
-                                    </div>
                                     <input type="text" placeholder="Busca tu evento">
                                     <button type="submit" class="site-btn">BUSCAR</button>
                                 </form>
