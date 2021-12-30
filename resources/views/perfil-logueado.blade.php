@@ -150,7 +150,7 @@
             </div>
             <div class="recent-border mt-4"> <span class="recent-orders">E Tickets</span> </div>
             <div class="wishlist-border pt-2"> <span class="wishlist">Favoritos</span> </div>
-            <div class="fashion-studio-border pt-2"> <span class="fashion-studio">Sign Off</span> </div>
+            <a href="{{ route('inicio') }}" class="fashion-studio-border pt-2" id="button" onclick="localStorage.clear()"> <span class="fashion-studio"><i class="fas fa-sign-in-alt"></i>Log out</span></a>
         </div>
     </div>
 
