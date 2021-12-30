@@ -34,7 +34,7 @@ Route::post('login', function(){
     $credenciales = request()->only("email", "password");
     $resultado = Auth::attempt($credenciales);
 
-    var_dump($resultado);
+    var_dump($credenciales);
 });
 
 Route::get('/conocenos', function () {
