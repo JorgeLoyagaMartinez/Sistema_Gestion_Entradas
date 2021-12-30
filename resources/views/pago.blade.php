@@ -137,7 +137,7 @@
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
-                                    <button type="submit" class="site-btn">PAGAR</button>
+                                    <a href="{{route('tickets.store')}}" class="site-btn">PAGAR</a> 
                                 </div>
                             </div>
                         </div>

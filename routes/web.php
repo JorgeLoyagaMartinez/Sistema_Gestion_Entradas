@@ -18,6 +18,9 @@ Route::get('/crear-evento', [EventosController::class, 'create'])->name('crear-e
 
 Route::post('/admin', [EventosController::class, 'store'])->name('admin');
 
+Route::post('/eticket',[TicketController::class,'store'])->name('eticket');
+
+
 Route::get('/conocenos', function () {
     return view('conocenos');
 })->name('conocenos');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,15 +13,25 @@ class TicketsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $tickets = DB::select('SELECT * FROM tickets');
-        $parametro = [
-            "ticket" => $tickets,
-            "titulo" => "Esta es la lista de tickets"
-        ];
+        $nombre = $request->get('nombre');
 
-        return view('tus-eventos', $parametro);
+        if ($request->has('nombre')){
+            //$busqueda = 'Resultados para: '.$nombre;
+            $Tickets = Ticket::where('nombre', 'like', '%'.$nombre.'%')->get();
+        } else {
+            //$busqueda = 'Todos los eventos';
+            $Tickets = Ticket::get();
+        }
+             
+        $parametro = [
+            'Tickets' => $Tickets,
+            'nombre' => $nombre,
+            ];
+
+        return view('etickets', $parametro);
+  
     }
 
     /**
@@ -30,7 +41,7 @@ class TicketsController extends Controller
      */
     public function create()
     {
-        //
+         //
     }
 
     /**
@@ -41,7 +52,13 @@ class TicketsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Ticket::create([
+            'idUsuario' => $request->get('idUsuario'),
+            'idEvento' => $request->get('idUsuario'),
+            'cantidad' => $request->get('cantidad'),
+
+        ]);
+        return redirect ()-> route ('eticket');
     }
 
     /**
