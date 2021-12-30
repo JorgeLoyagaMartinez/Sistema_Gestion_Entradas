@@ -133,7 +133,7 @@
 </style>
 <body class="white">
 
-   
+
     <div class="container d-flex justify-content-center mt-5">
         <div class="card">
             <div class="top-container"> <img src="https://i.imgur.com/G1pXs7D.jpg" class="img-fluid profile-image" width="70">
@@ -148,8 +148,7 @@
                 </div>
                 <div class="d-flex flex-column text-right mr-2"> <span class="current-balance">Monto Actual</span> <span class="amount"><span class="dollar-sign">$</span>1500</span> </div>
             </div>
-            <div class="recent-border mt-4"> <span class="recent-orders">E Tickets</span> </div>
-            <div class="wishlist-border pt-2"> <span class="wishlist">Favoritos</span> </div>
+            <a href="{{ route("eticket") }}" class="recent-border mt-4"> <span class="recent-orders">E Tickets</span> </a>
             <a href="{{ route('inicio') }}" class="fashion-studio-border pt-2" id="button" onclick="localStorage.clear()"> <span class="fashion-studio"><i class="fas fa-sign-in-alt"></i>Log out</span></a>
         </div>
     </div>
