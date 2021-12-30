@@ -26,13 +26,13 @@
         <!-- Hero Section End -->
 
         <!-- Breadcrumb Section Begin -->
-        <section class="breadcrumb-section set-bg" data-setbg="{{ URL::asset('img/breadcrumb.jpg') }}">
+        <section class="breadcrumb-section set-bg" data-setbg="{{ URL::asset('img/bannereventos.png') }}">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="breadcrumb__text">
                             <h2>Pago</h2>
-                            <div class="breadcrumb__option">
+                            <div class="breadcrumb__optiong">
                                 <a href="{{ route('inicio') }}">Inicio</a>
                                 <span>Pago</span>
                             </div>
@@ -46,14 +46,9 @@
         <!-- Checkout Section Begin -->
         <section class="checkout spad">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6><span class="icon_tag_alt"></span> Tienes un cupón? <a href="#">Click aquí</a> para ingresar tu cupón
-                        </h6>
-                    </div>
-                </div>
+
                 <div class="checkout__form">
-                    <h4>Detalles Usuario</h4>
+                    <h4>Informacion de pago</h4>
                     <form action="#">
                         <div class="row">
                             <div class="col-lg-8 col-md-6">
@@ -72,51 +67,22 @@
                                     </div>
                                 </div>
                                 <div class="checkout__input">
-                                    <p>País<span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Dirección<span>*</span></p>
-                                    <input type="text" placeholder="Street Address" class="checkout__input__add">
-                                    <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Ciudad<span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Provincia<span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Código Postal<span>*</span></p>
+                                    <p>Numero de Tarjeta<span>*</span></p>
                                     <input type="text">
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="checkout__input">
-                                            <p>Celular<span>*</span></p>
+                                            <p>Codigo de Seguridad<span>*</span></p>
                                             <input type="text">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="checkout__input">
-                                            <p>Email<span>*</span></p>
+                                            <p>Fecha de vencimiento<span>*</span></p>
                                             <input type="text">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="acc">
-                                        Crear una cuenta?
-                                        <input type="checkbox" id="acc">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <p>Crear una cuenta para recibir más información. Si tú regresas a esta página por favor inicia sesión</p>
-                                <div class="checkout__input">
-                                    <p>Contraseña<span>*</span></p>
-                                    <input type="text">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
@@ -130,14 +96,7 @@
                                     </ul>
                                     <div class="checkout__order__subtotal">Subtotal <span>$***.**</span></div>
                                     <div class="checkout__order__total">Total <span>$***.**</span></div>
-                                    <div class="checkout__input__checkbox">
-                                        <label for="acc-or">
-                                            Crear una cuenta?
-                                            <input type="checkbox" id="acc-or">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="site-btn">PAGAR</button>
+                                    <a href="{{ route("eticket") }}" class="site-btn">PAGAR</a>
                                 </div>
                             </div>
                         </div>

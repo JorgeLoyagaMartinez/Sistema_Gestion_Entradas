@@ -14,6 +14,7 @@
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- Font Awesome CSS -->
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!-- Bootstrap JS -->
@@ -48,8 +49,7 @@
             </div>
             <div class="humberger__menu__cart">
                 <ul>
-                    <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span></span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i></a></li>
                 </ul>
             </div>
             <div class="humberger__menu__widget">
@@ -82,15 +82,7 @@
                         <div class="col-lg-12 col-md-6">
                             <div class="header__top__right">
                                 <div id="login">
-                                    <div class="dropdown">
-                                        <button >Login</button>
-                                    </div>
-                                    <div id="login-div">
-                                        
-                                        <div class="container-login">
-                                            
-                                        </div>
-                                    </div>
+                                    <a id="link-login" href="{{ route("login") }}"><i class="fas fa-user-circle"></i>Perfil</a>
                                 </div>
                             </div>
                         </div>
@@ -119,8 +111,7 @@
                                 <button id="button-like" onclick="closeList()">X</button>
                             </div>
                             <ul>
-                                <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
-                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> </a></li>
+                                <li><a href="{{ route('carrito') }}"><i style="font-size:2.3em;" class="fa fa-shopping-bag"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -144,8 +135,8 @@
                                 <a href="{{ route('inicio') }}"><img src="{{ URL::asset('img/logo2.png') }}" alt=""></a>
                             </div>
                             <ul>
-                                <li>Dirección: Calle 123 Buenos Aires</li>
-                                <li>Telefono: 0800-888-888</li>
+                                <li>Dirección: Mozart 2300, Buenos Aires.</li>
+                                <li>Telefono: (5411) 4867-7500.</li>
                                 <li>Email: Fascket@soporte.com</li>
                             </ul>
                         </div>
@@ -202,7 +193,6 @@
         <script src="{{ URL::asset('js/mixitup.min.js') }}"></script>
         <script src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
         <script src="{{ URL::asset('js/main.js') }}"></script>
-        <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
         <script src="{{ URL::asset("js/checkout.js") }}"></script>
         <script src="{{ URL::asset("js/layout.js") }}"></script>

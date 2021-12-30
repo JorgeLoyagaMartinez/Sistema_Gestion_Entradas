@@ -27,10 +27,6 @@
                         <div class="hero__search">
                             <div class="hero__search__form">
                                 <form action="{{ route("tus-eventos") }}" method="GET">
-                                    <div class="hero__search__categories">
-                                        <p>Todas</p>
-                                        <span class="arrow_carrot-down"></span>
-                                    </div>
                                     <input type="text" id="nombre" aria-describedby="search" name='nombre' placeholder="Busca tu evento">
                                     <button type="submit" class="site-btn">BUSCAR</button>
                                 </form>
@@ -42,7 +38,7 @@
                                     <div class="categories__slider owl-carousel">
                                         @foreach ($eventos as $item)
                                                 <div class="col-lg-3">
-                                                    <div class="categories__item set-bg" data-setbg="{{ $item->portada }}">
+                                                    <div class="categories__item set-bg" data-setbg="{{ $item->imagenes }}">
                                                         <h5><a href="{{ route("eventos.show", $item) }}">{{ $item->nombre }}</a></h5>
                                                     </div>
                                                 </div>
@@ -57,7 +53,7 @@
             </div>
         </section>
         <!-- Main Banner Section End -->
- 
+
         <!-- Second Banner Begin -->
         <div class="banner">
             <h2 class="prox-eventos">Proximos eventos</h2>
