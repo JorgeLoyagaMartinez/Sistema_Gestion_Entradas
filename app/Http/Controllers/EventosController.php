@@ -17,8 +17,6 @@ class EventosController extends Controller
     {
         $nombre = $request->get('nombre');
 
-
-
         if ($request->has('nombre')){
             //$busqueda = 'Resultados para: '.$nombre;
             $eventos = Evento::where('nombre', 'like', '%'.$nombre.'%')->get();
@@ -26,10 +24,19 @@ class EventosController extends Controller
             //$busqueda = 'Todos los eventos';
             $eventos = Evento::get();
         }
-
+        $eventoDestacado = Evento::where('destacado', "=", 1)->get();
+        if(!$eventoDestacado->isEmpty()) {
+            $dest = $eventoDestacado[0];
+        } else {
+            $dest = $eventos[0];
+        }
+        $eventosDestacadosDos = Evento::orderBy('fecha', 'desc')->take(2)->get();
+        
         $parametro = [
             'eventos' => $eventos,
-            'nombre' => $nombre
+            'nombre' => $nombre,
+            'destacado' => $dest,
+            "destacadosAbajo" => $eventosDestacadosDos
         ];
 
         return view('inicio', $parametro);
@@ -69,7 +76,7 @@ class EventosController extends Controller
      */
     public function create()
     {
-        return view('eventos.create');
+        return view('crear-evento');
     }
 
     /**
@@ -84,15 +91,18 @@ class EventosController extends Controller
             'nombre' => $request->get('nombre'),
             'descripcion' => $request->get('descripcion'),
             'portada' => $request->get('portada'),
+            'imagenes' => $request->get('imagenes'),
             'fecha' => $request->get('fecha'),
             'lugar' => $request->get('lugar'),
             'horario' => $request->get('horario'),
             'precio' => $request->get('precio'),
             'stock' => $request->get('stock'),
-            'estado' => $request->get('estado')
+            'estado' => $request->get('estado'),
+            'destacado' => $request->get('destacado')
         ]);
 
-        return redirect()->route('eventos.eventos');
+        return redirect()->route('admin');
+        // return request();
     }
 
     /**
@@ -123,7 +133,7 @@ class EventosController extends Controller
     public function categoryFilter($categoria)
     {
         $eventos = Evento::where('categoria', '=', $categoria)->get();
-        return view('eventos.categorias', ['eventos'=>$eventos]);
+        return view('categorias-filtradas', ['eventos'=>$eventos]);
     }
 
     /**
@@ -139,12 +149,14 @@ class EventosController extends Controller
             'nombre' => request('nombre'),
             'descripcion' => request('descripcion'),
             'portada' => request('portada'),
+            'imagenes' => request('imagenes'),
             'fecha' => request('fecha'),
             'lugar' => request('lugar'),
             'horario' => request('horario'),
             'precio' => request('precio'),
             'stock' => request('stock'),
-            'estado' => request('estado')
+            'estado' => request('estado'),
+            'destacado' => request('destacado')
            ]);
 
            return redirect()->route('eventos.show', $evento);

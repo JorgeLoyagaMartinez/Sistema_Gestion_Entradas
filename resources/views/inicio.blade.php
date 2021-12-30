@@ -6,13 +6,16 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="hero__item set-bg" data-setbg="{{ URL::asset('img/hero/hola.jpeg') }}">
-                        <div class="hero__text">
-                            <span>EN VIVO EN EL HIPODROMO<br />DE SAN ISIDRO</span>
-                            <h2>BANDALOS<br />CHINOS</h2>
+                    <div class="col-lg-3 p-5 bg-white" style="padding: 0px" data-setbg="{{ URL::asset('img/hero/hola.jpeg') }}">
+                        <div class="hero__text my-5">
+                            <span>EN VIVO EN {{ $destacado->lugar }}</span>
+                            <h2> {{ $destacado->nombre }}</h2>
                             <p>ULTIMAS ENTRADAS DISPONIBLES</p>
-                            <a href="" class="primary-btn">COMPRA AHORA</a>
+                            <a class="primary-btn" href="{{ route("eventos.show", $destacado) }}">COMPRA AHORA</a>
                         </div>
+                    </div>
+                    <div class="col-lg-9" style="padding: 0px" >
+                        <a  href="{{ route("eventos.show", $destacado) }}"> <img src="{{ $destacado->portada }}" alt=""> </a>
                     </div>
                 </div>
             </div>
@@ -39,7 +42,7 @@
                                     <div class="categories__slider owl-carousel">
                                         @foreach ($eventos as $item)
                                                 <div class="col-lg-3">
-                                                    <div class="categories__item set-bg" data-setbg="{{ $item->portada }}">
+                                                    <div class="categories__item set-bg" data-setbg="{{ $item->imagenes }}">
                                                         <h5><a href="{{ route("eventos.show", $item) }}">{{ $item->nombre }}</a></h5>
                                                     </div>
                                                 </div>
@@ -57,19 +60,20 @@
  
         <!-- Second Banner Begin -->
         <div class="banner">
+            <h2 class="prox-eventos">Proximos eventos</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="banner__pic">
-                            <a href="">
-                                <img src="{{ URL::asset('img/hero/1.png') }}" alt="">
+                        <div class="hero__text my-5 text-center">
+                            <a href="{{ route("eventos.show", $destacadosAbajo[0]) }}">
+                                <img src="{{ $destacadosAbajo[0]->portada }}" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="banner__pic">
-                            <a href="">
-                                <img src="{{ URL::asset('img/hero/2.png') }}" alt="">
+                        <div class="hero__text my-5 text-center">
+                            <a href="{{ route("eventos.show", $destacadosAbajo[1]) }}">
+                                <img src="{{ $destacadosAbajo[1]->portada }}" alt="">
                             </a>
                         </div>
                     </div>

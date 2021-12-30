@@ -64,11 +64,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-7">
-                            @if ($nombre)
-                                <h3 id="search-h3">{{ 'Resultados para: ' . $nombre}}</h3>
-                            @else
-                                <h3 id="search-h3">Todos los eventos</h3>
-                            @endif
+                            {{-- <h3 id="search-h3">{{ 'Resultados para: ' . $eventos->categoria}}</h3> --}}
                         <div class="filter__item">
                             <div class="row">
                                 <div class="col-lg-4 col-md-5">
@@ -91,7 +87,7 @@
                             @forelse ($eventos as $evento)
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="{{ $evento->imagenes }}">
+                                    <div class="product__item__pic set-bg" data-setbg="{{ $evento->portada }}">
                                         <ul class="product__item__pic__hover">
                                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
