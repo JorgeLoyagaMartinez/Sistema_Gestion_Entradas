@@ -49,7 +49,7 @@
             <div class="humberger__menu__cart">
                 <ul>
                     <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span onload="totalItems()">3</span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span></span></a></li>
                 </ul>
             </div>
             <div class="humberger__menu__widget">
@@ -83,7 +83,7 @@
                             <div class="header__top__right">
                                 <div id="login">
                                     <div class="dropdown">
-                                        <button onclick="showLogin()">Login</button>
+                                        <button >Login</button>
                                     </div>
                                     <div id="login-div">
                                         
@@ -120,7 +120,7 @@
                             </div>
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
-                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span id="cartIcon" onload="totalItems()"></span></a></li>
+                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> </a></li>
                             </ul>
                         </div>
                     </div>
@@ -205,6 +205,10 @@
         <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
         <script src="{{ URL::asset("js/checkout.js") }}"></script>
+        <script src="{{ URL::asset("js/layout.js") }}"></script>
+        <script>
+            window.onload = handleLogin();
+        </script>
     </body>
 
 </html>

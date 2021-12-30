@@ -50,7 +50,7 @@
             </div>
             
             <div class="hideMessage" id="editarEventoBtn" >
-                <a href="{{ route('editar-evento')}}" class="site-btn primary-btn my-4 text-light" data-toggle="tab" role="tab" aria-controls="editar" aria-selected="true">
+                <a href="" class="site-btn primary-btn my-4 text-light" data-toggle="tab" role="tab" aria-controls="editar" aria-selected="true">
                     Editar evento
                 </a>
             </div>

@@ -1,9 +1,9 @@
 // Mostrar vista detalle en función al tipo de usuario
 const currentUser = localStorage.getItem('currentUser');
 
-const showView = () => {
+const handleLogin = () => {
 
-    const editarEvento = document.querySelector('#editarEventoBtn');
+    const loginBtn = document.querySelector('#login');
     const verEvento = document.querySelector('#verEvento');
     
     if (currentUser === 'admin@mail.com') {
