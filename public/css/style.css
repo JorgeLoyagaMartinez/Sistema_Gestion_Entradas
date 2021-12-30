@@ -3609,17 +3609,17 @@ ol {
     font-weight: 700;
 }
 
-#link-login {
+.link-login {
     font-family: "Cairo", sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #000;
 }
 
-#link-login i {
+.link-login i {
     margin: 0 10px;
     font-size: .8em;
 }
 
-#link-login:hover {
+.link-login:hover {
     color: #a923ca;
 }

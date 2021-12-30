@@ -98,7 +98,7 @@ const showProducts = (productArray) => {
     totalList.innerHTML = showTotal();
     totalItems();
   } else {
-    productsDiv.textContent = 'No hay productos en el carrito';
+    productsDiv.innerHTML = 'No hay productos en el carrito';
     totalItems();
   }
 };
