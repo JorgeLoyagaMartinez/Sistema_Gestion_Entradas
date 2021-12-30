@@ -49,7 +49,7 @@
             </div>
             <div class="humberger__menu__cart">
                 <ul>
-                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span onload="totalItems()">3</span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i></a></li>
                 </ul>
             </div>
             <div class="humberger__menu__widget">
@@ -82,7 +82,7 @@
                         <div class="col-lg-12 col-md-6">
                             <div class="header__top__right">
                                 <div id="login">
-                                    <a id="link-login" href="{{ route("login") }}"><i class="fas fa-sign-in-alt"></i>Login</a>
+                                    <a id="link-login" href="{{ route("login") }}"><i class="fas fa-user-circle"></i>Perfil</a>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                                 <button id="button-like" onclick="closeList()">X</button>
                             </div>
                             <ul>
-                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span id="cartIcon" onload="totalItems()"></span></a></li>
+                                <li><a href="{{ route('carrito') }}"><i style="font-size:2.3em;" class="fa fa-shopping-bag"></i></a></li>
                             </ul>
                         </div>
                     </div>

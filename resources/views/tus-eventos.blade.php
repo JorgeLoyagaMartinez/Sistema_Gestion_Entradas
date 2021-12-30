@@ -11,10 +11,6 @@
                         <div class="hero__search">
                             <div class="hero__search__form">
                                 <form action="{{ route("tus-eventos") }}" method="GET">
-                                    <div class="hero__search__categories">
-                                        <p>Todas</p>
-                                        <span class="arrow_carrot-down"></span>
-                                    </div>
                                     <input type="text" id="nombre" aria-describedby="search" name='nombre' placeholder="Busca tu evento">
                                     <button type="submit" class="site-btn">BUSCAR</button>
                                 </form>
@@ -71,16 +67,7 @@
                             @endif
                         <div class="filter__item">
                             <div class="row">
-                                <div class="col-lg-4 col-md-5">
-                                    <div class="filter__sort">
-                                        <span>Ordenar por</span>
-                                        <select>
-                                            <option value="0">Default</option>
-                                            <option value="0">Default</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-12 col-md-4">
                                     <div class="filter__found">
                                         <h6><span>{{  count($eventos) }}</span> Products found</h6>
                                     </div>

@@ -621,7 +621,7 @@ ol {
 }
 
 .hero__search__form form input {
-    width: 70%;
+    width: 100%;
     border: none;
     height: 48px;
     font-size: 16px;
@@ -3014,9 +3014,7 @@ ol {
     .header__menu ul li {
         margin-right: 20px;
     }
-    .hero__search__form {
-        width: 490px;
-    }
+
     .hero__categories__all {
         padding: 10px 25px 10px 20px;
     }
@@ -3042,9 +3040,6 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero__categories {
         margin-bottom: 30px;
-    }
-    .hero__search__form {
-        width: 485px;
     }
     .categories__slider.owl-carousel .owl-nav button {
         left: -20px;
@@ -3268,9 +3263,6 @@ ol {
     }
     .hero__search {
         margin-bottom: 30px;
-    }
-    .hero__search__form {
-        width: 100%;
     }
     .hero__search__form form input {
         width: 100%;
@@ -3582,6 +3574,7 @@ ol {
 }
 .detalleCantidad input {
     width: 60px;
+    color: #a923ca;
 }
 .detalleCantidad p {
     margin: 0;

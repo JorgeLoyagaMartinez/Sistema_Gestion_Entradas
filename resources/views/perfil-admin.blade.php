@@ -156,7 +156,7 @@
                 </div>
             </div>
             <a href="{{ route('crear-evento') }}" class="fashion-studio-border pt-2" id="button"> <span class="fashion-studio">Crear evento</span> </a>
-            <a href="#" class="fashion-studio-border pt-2" id="button"> <span class="fashion-studio">Log out</span> </a>
+            <a href="#" class="fashion-studio-border pt-2" id="button"> <span class="fashion-studio"><i class="fas fa-sign-in-alt"></i>Log out</span></a>
         </div>
     </div>
 
