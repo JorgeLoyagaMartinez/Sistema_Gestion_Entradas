@@ -1000,6 +1000,7 @@ ol {
     padding-top: 10px;
     font-size: 3em;
     font-weight: bold;
+    color: #000;
 }
 
 .latest-product__item__text h6 {
@@ -2877,7 +2878,7 @@ ol {
 .map {
     height: 500px;
     position: relative;
-    
+
 }
 
 .map iframe {

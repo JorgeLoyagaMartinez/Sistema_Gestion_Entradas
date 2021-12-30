@@ -48,7 +48,6 @@
             </div>
             <div class="humberger__menu__cart">
                 <ul>
-                    <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                     <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span onload="totalItems()">3</span></a></li>
                 </ul>
             </div>
@@ -119,7 +118,6 @@
                                 <button id="button-like" onclick="closeList()">X</button>
                             </div>
                             <ul>
-                                <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
                                 <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span id="cartIcon" onload="totalItems()"></span></a></li>
                             </ul>
                         </div>
@@ -202,7 +200,6 @@
         <script src="{{ URL::asset('js/mixitup.min.js') }}"></script>
         <script src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
         <script src="{{ URL::asset('js/main.js') }}"></script>
-        <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
         <script src="{{ URL::asset("js/checkout.js") }}"></script>
     </body>
