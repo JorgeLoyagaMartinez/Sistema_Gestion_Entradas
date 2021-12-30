@@ -32,7 +32,7 @@
 
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/7kLjDyV/perfil.jpg"  width="90">
-                            <h5 class="mt-3 name">Agustin Rojas</h5><span class="work d-block">Frontend</span>
+                            <h5 class="mt-3 name" style="color: #a923ca;">Agustin Rojas</h5><span class="work d-block">Frontend</span>
                             <div class="mt-4 about"><span>Estudiante de ingenieria en informatica, apasionado por la tecnologia y la musica.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
@@ -45,7 +45,7 @@
 
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/JQ1Z007/Pablo-PNG-06-06-min-min.png" width="90">
-                            <h5 class="mt-3 name">Pablo Paladino Costa</h5><span class="work d-block">Frontend</span>
+                            <h5 class="mt-3 name" style="color: #a923ca;">Pablo Paladino Costa</h5><span class="work d-block">Frontend</span>
                             <div class="mt-4 about"><span>Diseño grafico, música y tecnología. Tres cosas&nbsp; que siempre me acompañan y me apasionan.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
@@ -56,7 +56,7 @@
 
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/Wf4y3D1/perfil.jpg" width="80">
-                            <h5 class="mt-3 name">Felipe Fernandez</h5><span class="work d-block">Frontend</span>
+                            <h5 class="mt-3 name" style="color: #a923ca;">Felipe Fernandez</h5><span class="work d-block">Frontend</span>
                             <div class="mt-4 about"><span>Estudiante de Sistemas, me apasiona la tecnologia. Organizado y perseverante. Me gusta trabajar en equipo.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
@@ -68,7 +68,7 @@
 
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/Yk07KnT/Whats-App-Image-2021-07-07-at-09-19-172.jpg" width="90">
-                            <h5 class="mt-3 name">Micaela Outon</h5><span class="work d-block">Backend</span>
+                            <h5 class="mt-3 name" style="color: #a923ca;">Micaela Outon</h5><span class="work d-block">Backend</span>
                             <div class="mt-4 about"><span>Me apasiona la tecnología y el running. Estudiante de Lic. en Relaciones del Trabajo.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
@@ -79,7 +79,7 @@
                     
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/Fz1hgYL/21-07-01-00-50-17-827.jpg" width="90">
-                            <h5 class="mt-3 name">Valeria Silveira</h5><span class="work d-block">Backend</span>
+                            <h5 class="mt-3 name" style="color: #a923ca;">Valeria Silveira</h5><span class="work d-block">Backend</span>
                             <div class="mt-4 about"><span>React frontend developer. Ingeniera química en busca de un cambio de profesión.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
@@ -90,7 +90,7 @@
 
                     <div class="col-md-4 my-4">
                         <div class="bg-white p-3 text-center rounded box"><img class="img-center rounded-circle" src="https://i.ibb.co/q9h2N3H/Whats-App-Image-2021-12-29-at-02-10-31.jpg" width="90">
-                            <h5 class="mt-3 name">Jorge Loyaga</h5><span class="work d-block">Backend</span>
+                            <h5 class="mt-3 name" style="color: #a923ca;">Jorge Loyaga</h5><span class="work d-block">Backend</span>
                             <div class="mt-4 about"><span>Estudiante de Ing. Sistemas y Tecnico en Computacion. Apasionado por la industria informatica. Me gusta el cine, la musica y los deportes electronicos.</span></div>
                             <div class="mt-4">
                                 <h6 class="v-profile">
