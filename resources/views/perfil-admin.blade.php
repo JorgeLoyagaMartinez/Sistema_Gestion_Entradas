@@ -150,20 +150,12 @@
 
     <div class="container d-flex justify-content-center mt-5">
         <div class="card">
-            <div class="top-container"> <img src="https://i.imgur.com/G1pXs7D.jpg" class="img-fluid profile-image" width="70">
+            <div class="top-container" style="padding:10px; border-bottom: 1px solid #a923ca"> <img src="https://i.imgur.com/G1pXs7D.jpg" class="img-fluid profile-image" width="70">
                 <div class="ml-3">
                     <h5 class="name">Administrador</h5>
-                    {{-- <p class="mail">pcostapol@gmail.com</p> --}}
                 </div>
-            </div>
-            <div class="middle-container d-flex justify-content-between align-items-center mt-3 p-2">
-                <div class="dollar-div px-3">
-                    <div class="round-div"><i class="fa fa-dollar dollar"></i></div>
-                </div>
-                <div class="d-flex flex-column text-right mr-2"> <span class="current-balance">Monto Actual</span> <span class="amount"><span class="dollar-sign">$</span>1500</span> </div>
             </div>
             <a href="{{ route('crear-evento') }}" class="fashion-studio-border pt-2" id="button"> <span class="fashion-studio">Crear evento</span> </a>
-            <a href="#" class="fashion-studio-border pt-2" id="button"> <span class="fashion-studio">Editar evento</span> </a>
             <a href="#" class="fashion-studio-border pt-2" id="button"> <span class="fashion-studio">Log out</span> </a>
         </div>
     </div>

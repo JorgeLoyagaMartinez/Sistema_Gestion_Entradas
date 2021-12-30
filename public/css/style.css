@@ -3611,3 +3611,18 @@ ol {
     text-align: center !important;
     font-weight: 700;
 }
+
+#link-login {
+    font-family: "Cairo", sans-serif;
+    font-size: 2.5em;
+    color: #000;
+}
+
+#link-login i {
+    margin: 0 10px;
+    font-size: .8em;
+}
+
+#link-login:hover {
+    color: #a923ca;
+}

@@ -14,6 +14,7 @@
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- Font Awesome CSS -->
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!-- Bootstrap JS -->
@@ -81,15 +82,7 @@
                         <div class="col-lg-12 col-md-6">
                             <div class="header__top__right">
                                 <div id="login">
-                                    <div class="dropdown">
-                                        <button onclick="showLogin()">Login</button>
-                                    </div>
-                                    <div id="login-div">
-
-                                        <div class="container-login">
-
-                                        </div>
-                                    </div>
+                                    <a id="link-login" href="{{ route("login") }}"><i class="fas fa-sign-in-alt"></i>Login</a>
                                 </div>
                             </div>
                         </div>

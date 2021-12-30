@@ -8,7 +8,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <div class="container pb-5 mb-sm-4">
             <div class="row pt-5">
-                <div class="col-md-6 pt-sm-3">
+                <div class="col-12 pt-sm-3 detalleCantidad">
                     <div class="card">
                         <div class="card-body">
                             <h2 class="h4 mb-1">Logueate</h2>
@@ -43,7 +43,7 @@
                                     <div class="custom-control custom-checkbox">
                                         <input class="custom-control-input" type="checkbox" checked="" id="remember_me">
                                         <label class="custom-control-label" for="remember_me">Recuerdame</label>
-                                    </div><a class="nav-link-inline font-size-sm" href="account-password-recovery.html">Olvidaste tu contraseña?</a>
+                                    </div><a class="nav-link-inline font-size-sm" href="#">Olvidaste tu contraseña?</a>
                                 </div>
                                 <hr class="mt-4">
                                 <div class="text-right pt-4">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 pt-5 pt-sm-3">
+                <div class="col-md-6 col-sm-12 pt-sm-3 showMessage m-auto">
                     <h2 class="h4 mb-3">Sin cuenta? Registrate</h2>
                     <p class="text-muted mb-4">Estas sólo a minutos de adquirir la entrada para tu evento</p>
                     <form method="POST" action="{{ route("usuarios.store")  }}" autocomplete="OFF">
@@ -132,7 +132,7 @@
 
                         </div>
                         <div class="text-right">
-                            <button style="background-color:#a923ca; border:none; font-size:" class="btn btn-primary" type="submit">Registrate</button>
+                            <button class="btn btn-primary" type="submit">Registrate</button>
                         </div>
                     </form>
                 </div>

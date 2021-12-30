@@ -160,7 +160,7 @@ class EventosController extends Controller
            ]);
 
            return redirect()->route('eventos.show', $evento);
-        //    return request();
+        // return request();
     }
 
     /**
