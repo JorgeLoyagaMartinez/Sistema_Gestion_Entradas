@@ -1,14 +1,14 @@
 @extends('layout')
 @section('title', 'Registro | Fascket')
 @section('content')
-    
+
 
 
 <main>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <div class="container pb-5 mb-sm-4">
             <div class="row pt-5">
-                <div class="col-sm-12 col-md-6 pt-sm-3">
+                <div class="col-12 pt-sm-3 detalleCantidad">
                     <div class="card">
                         <div class="card-body">
                             <h2 class="h4 mb-1">Logueate</h2>
@@ -19,7 +19,7 @@
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                     <a class="social-btn sb-twitter mr-2 mb-2" href="#" data-toggle="tooltip" title="" data-original-title="Sign in with Twitter">
-                                        <i class="fa fa-twitter"></i> 
+                                        <i class="fa fa-twitter"></i>
                                     </a>
                                     <a class="social-btn sb-linkedin mr-2 mb-2" href="#" data-toggle="tooltip" title="" data-original-title="Sign in with LinkedIn">
                                         <i class="fa fa-linkedin"></i>
@@ -43,7 +43,7 @@
                                     <div class="custom-control custom-checkbox">
                                         <input class="custom-control-input" type="checkbox" checked="" id="remember_me">
                                         <label class="custom-control-label" for="remember_me">Recuerdame</label>
-                                    </div><a class="nav-link-inline font-size-sm" href="account-password-recovery.html">Olvidaste tu contraseña?</a>
+                                    </div><a class="nav-link-inline font-size-sm" href="#">Olvidaste tu contraseña?</a>
                                 </div>
                                 <hr class="mt-4">
                                 <div class="text-right pt-4">
@@ -53,53 +53,83 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 pt-5 pt-sm-3">
+                <div class="col-md-6 col-sm-12 pt-sm-3 showMessage m-auto">
                     <h2 class="h4 mb-3">Sin cuenta? Registrate</h2>
                     <p class="text-muted mb-4">Estas sólo a minutos de adquirir la entrada para tu evento</p>
-                    <form class="needs-validation" novalidate="">
+                    <form method="POST" action="{{ route("usuarios.store")  }}" autocomplete="OFF">
+                        @csrf
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="reg-fn">Primer Nombre</label>
-                                    <input class="form-control" type="text" required="" id="reg-fn">
+                                    <input class="form-control" type="text" required="" name="nombre" id="reg-fn">
                                     <div class="invalid-feedback">Ingresá tu primer nombre</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="reg-ln">Apellido</label>
-                                    <input class="form-control" type="text" required="" id="reg-ln">
+                                    <input class="form-control" type="text" required="" name="apellido" id="reg-ln">
                                     <div class="invalid-feedback">Ingresá tu apellido</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="reg-email">E-mail </label>
-                                    <input class="form-control" type="email" required="" id="reg-email">
+                                    <input class="form-control" type="email" required="" name="mail" id="reg-email">
                                     <div class="invalid-feedback">Ingresá un mail válido</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="reg-phone">Celular</label>
-                                    <input class="form-control" type="text" required="" id="reg-phone">
+                                    <input class="form-control" type="text" required="" name="telefono" id="reg-phone">
                                     <div class="invalid-feedback">Ingresá tu número de teléfono</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="reg-password">Contraseña</label>
-                                    <input class="form-control" type="password" required="" id="reg-password">
+                                    <input class="form-control" type="password" required="" name="password" id="reg-password">
                                     <div class="invalid-feedback">Ingresá tu contraseña</div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="reg-password-confirm">Confirma Contraseña</label>
-                                    <input class="form-control" type="password" required="" id="reg-password-confirm">
-                                    <div class="invalid-feedback">Contraseñas no coinciden!</div>
+                                    <label for="reg-password">País</label>
+                                    <input class="form-control" type="text" required="" name="pais" id="reg-password">
+                                    <div class="invalid-feedback">Ingresá tu país</div>
                                 </div>
                             </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-password">Direccion</label>
+                                    <input class="form-control" type="text" required="" name="direccion" id="reg-password">
+                                    <div class="invalid-feedback">Ingresá tu direccion</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-password">Ciudad</label>
+                                    <input class="form-control" type="text" required="" name="ciudad" id="reg-password">
+                                    <div class="invalid-feedback">Ingresa tu ciudad</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-password">Provincia</label>
+                                    <input class="form-control" type="text" required="" name="provincia" id="reg-password">
+                                    <div class="invalid-feedback">Ingresa tu provincia</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reg-password">Codigo Postal</label>
+                                    <input class="form-control" type="text" required="" name="codigo-postal" id="reg-password">
+                                    <div class="invalid-feedback">Ingresa tu codigo postal</div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="text-right">
                             <button class="site-btn primary-btn" type="submit">Registrate</button>

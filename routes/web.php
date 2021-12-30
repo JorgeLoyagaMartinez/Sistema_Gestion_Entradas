@@ -5,6 +5,9 @@ use App\Http\Controllers\TicketsController;
 use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
 
+Route::resource('eventos', EventosController::class);
+Route::resource('tickets', TicketsController::class);
+Route::resource('usuarios', UsuariosController::class);
 
 Route::get('/', [EventosController::class, 'index'])->name('inicio');
 
@@ -17,6 +20,10 @@ Route::get('/eventos/{id}', [EventosController::class, 'show'])->name('detalle')
 Route::get('/crear-evento', [EventosController::class, 'create'])->name('crear-evento');
 
 Route::post('/admin', [EventosController::class, 'store'])->name('admin');
+
+Route::get('/eventos/{evento}/editar', [EventosController::class, 'edit'])->name('eventos.edit');
+
+Route::put('/eventos/{evento}', [EventosController::class, 'update'])->name('evento-editado');
 
 Route::get('/conocenos', function () {
     return view('conocenos');
@@ -55,8 +62,6 @@ Route::get('/admin', function () {
 })->name('admin');
 
 
-Route::resource('eventos', EventosController::class);
-Route::resource('tickets', TicketsController::class);
-Route::resource('usuarios', UsuariosController::class);
+
 
 

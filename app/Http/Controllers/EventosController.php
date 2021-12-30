@@ -31,7 +31,7 @@ class EventosController extends Controller
             $dest = $eventos[0];
         }
         $eventosDestacadosDos = Evento::orderBy('fecha', 'desc')->take(2)->get();
-        
+
         $parametro = [
             'eventos' => $eventos,
             'nombre' => $nombre,
@@ -126,7 +126,7 @@ class EventosController extends Controller
      */
     public function edit(Evento $evento)
     {
-        return view('eventos.edit', ['evento'=>$evento]);
+        return view('editar-evento', ['evento'=>$evento]);
     }
 
 
@@ -160,6 +160,7 @@ class EventosController extends Controller
            ]);
 
            return redirect()->route('eventos.show', $evento);
+        // return request();
     }
 
     /**
@@ -171,6 +172,6 @@ class EventosController extends Controller
     public function destroy(Evento $evento)
     {
         $evento->delete();
-        return redirect()->route('eventos.eventos');
+        return redirect()->route('inicio');
     }
 }

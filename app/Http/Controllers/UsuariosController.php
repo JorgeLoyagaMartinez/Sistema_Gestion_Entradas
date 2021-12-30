@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Usuario;
 use Illuminate\Http\Request;
 
 class UsuariosController extends Controller
@@ -13,7 +14,7 @@ class UsuariosController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -23,7 +24,7 @@ class UsuariosController extends Controller
      */
     public function create()
     {
-        //
+        return view('login');
     }
 
     /**
@@ -34,7 +35,20 @@ class UsuariosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Usuario::create([
+            "nombre" => $request->get("nombre"),
+            "apellido" => $request->get("apellido"),
+            "mail" => $request->get("mail"),
+            "telefono" => $request->get("telefono"),
+            "password" => $request->get("password"),
+            "pais" => $request->get("pais"),
+            "direccion" => $request->get("direccion"),
+            "ciudad" => $request->get("ciudad"),
+            "provincia" => $request->get("provincia"),
+            "codigo-postal" => $request->get("codigo-postal")
+        ]);
+
+        return redirect()->route("inicio");
     }
 
     /**
