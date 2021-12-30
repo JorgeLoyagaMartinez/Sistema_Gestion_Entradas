@@ -174,4 +174,5 @@ class EventosController extends Controller
         $evento->delete();
         return redirect()->route('inicio');
     }
+
 }
