@@ -3601,6 +3601,10 @@ ol {
     align-self: center;
     width: fit-content;
 }
+.showMessage a:hover {
+    background-color: #a923ca;
+    color: white;
+}
 .showMessage p {
     font-size: 16px;
     font-weight: 700;

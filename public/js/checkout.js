@@ -124,7 +124,7 @@ const showTotal = () => {
 // Mensaje agregar al carrito exitoso
 const showMessage = () => {
   const addedSuccess = document.querySelector('.onAdd');
-  console.log(addedSuccess)
+
   addedSuccess.classList.add('showMessage');
 }
 
