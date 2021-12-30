@@ -6,7 +6,6 @@
     <h1 id="title-form">Editar evento</h1>
 
     <div id="section-form">
-        <h3 id="subtitle-form">Edicion de eventos</h3>
         <form action="{{ route('eventos.update', $evento) }}" method="POST" id="crear-evento" autocomplete="off">
             @csrf @method('PUT')
             <div>
@@ -68,12 +67,12 @@
                 <label for="estado" id="form-label">Precio:</label>
                 <input type="number" id="form-control" aria-label="precio" name='precio' placeholder="Indicar precio" value={{ old('nombre', $evento->precio) }}>
             </div>
-            <div>
+            <div style="display: flex; align-items:center;">
                 <label for="destacado" id="form-label">Destacado:</label>
-                <input name="destacado" id="destacado" type="checkbox">
+                <input name="destacado" id="destacado" type="checkbox" style="cursor: pointer; ">
             </div>
-            <div>
-              <button type="submit" id="btn-crear">Editar evento</button>
+            <div class="btn-div-form">
+                <button type="submit" id="btn-crear">Editar evento</button>
             </div>
           </form>
     </div>
