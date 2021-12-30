@@ -8,7 +8,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <div class="container pb-5 mb-sm-4">
             <div class="row pt-5">
-                <div class="col-md-6 pt-sm-3">
+                <div class="col-sm-12 col-md-6 pt-sm-3">
                     <div class="card">
                         <div class="card-body">
                             <h2 class="h4 mb-1">Logueate</h2>
@@ -31,7 +31,7 @@
                             <form class="needs-validation" novalidate="">
                                 <div class="input-group form-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span></div>
-                                    <input class="form-control" type="email" placeholder="Email" required="">
+                                    <input class="form-control" type="email" placeholder="Email" required="" value id="userEmail">
                                     <div class="invalid-feedback">Ingresa un mail válido!</div>
                                 </div>
                                 <div class="input-group form-group">
@@ -47,13 +47,13 @@
                                 </div>
                                 <hr class="mt-4">
                                 <div class="text-right pt-4">
-                                    <button class="btn btn-primary" type="submit">Sign In</button>
+                                    <button class="site-btn primary-btn" type="button" id="loginSubmit" style='cursor: pointer'>Sign In</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 pt-5 pt-sm-3">
+                <div class="col-sm-12 col-md-6 pt-5 pt-sm-3">
                     <h2 class="h4 mb-3">Sin cuenta? Registrate</h2>
                     <p class="text-muted mb-4">Estas sólo a minutos de adquirir la entrada para tu evento</p>
                     <form class="needs-validation" novalidate="">
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                         <div class="text-right">
-                            <button class="btn btn-primary" type="submit">Registrate</button>
+                            <button class="site-btn primary-btn" type="submit">Registrate</button>
                         </div>
                     </form>
                 </div>
