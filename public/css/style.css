@@ -2820,12 +2820,12 @@ ol {
 -----------------------*/
 
 .contact {
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .contact__widget {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .contact__widget span {
@@ -2852,6 +2852,7 @@ ol {
 .map {
     height: 500px;
     position: relative;
+    
 }
 
 .map iframe {
@@ -2921,12 +2922,12 @@ ol {
 -----------------------*/
 
 .contact__form__title {
-    margin-bottom: 50px;
+    margin-bottom:20px;
     text-align: center;
 }
 
 .contact__form__title h2 {
-    color: #1c1c1c;
+    color: #141414;
     font-weight: 700;
 }
 
@@ -2971,6 +2972,7 @@ ol {
     font-size: 18px;
     letter-spacing: 2px;
 }
+
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
