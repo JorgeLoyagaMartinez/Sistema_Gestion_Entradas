@@ -26,7 +26,7 @@
         <!-- Hero Section End -->
 
         <!-- Breadcrumb Section Begin -->
-        <section class="breadcrumb-section set-bg" data-setbg="{{ URL::asset($evento->portada) }}">
+        <section class="breadcrumb-section set-bg portada-detalle" data-setbg="{{ URL::asset($evento->portada) }}">
         </section>
         <!-- Breadcrumb Section End -->
 
@@ -41,7 +41,7 @@
                             {{ $evento->descripcion}}
                         </p>
                         <div style='display: none' id='eventoStock'>{{$evento->stock}}</div>
-                        <div style='display: none' id="eventoPortada">{{$evento->portada}}</div>
+                        <div style='display: none' id="eventoPortada">{{$evento->imagenes}}</div>
                         <p class="cast">
                             <strong>Categoria: </strong>{{ $evento->categoria}}
                         </p>
