@@ -49,9 +49,8 @@
             <div class="humberger__menu__cart">
                 <ul>
                     <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                    <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span onload="totalItems()">3</span></a></li>
                 </ul>
-                <div class="header__cart__price">item: <span>$1500.00</span></div>
             </div>
             <div class="humberger__menu__widget">
                 <div class="header__top__right__auth">
@@ -121,9 +120,8 @@
                             </div>
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart" onclick="showList()"></i> <span>1</span></a></li>
-                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span>2</span></a></li>
+                                <li><a href="{{ route('carrito') }}"><i class="fa fa-shopping-bag"></i> <span id="cartIcon" onload="totalItems()"></span></a></li>
                             </ul>
-                            <div class="header__cart__price">item: <span>$1500.00</span></div>
                         </div>
                     </div>
                 </div>
@@ -207,8 +205,6 @@
         <script src="{{ URL::asset('js/like.js') }}"></script>
         <script src="{{ URL::asset("js/login.js") }}"></script>
         <script src="{{ URL::asset("js/checkout.js") }}"></script>
-        @yield('js')
-
     </body>
 
 </html>

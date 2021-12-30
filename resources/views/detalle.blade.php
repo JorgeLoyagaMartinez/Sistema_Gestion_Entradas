@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="container event-description breadcrumb__text">
                         <h2 class="my-3" style="color: #a923ca;" id="eventoNombre">{{$evento->nombre}}</h2>
-                    
+
                         <p>
                             {{ $evento->descripcion}}
                         </p>
@@ -56,7 +56,7 @@
 
             <div class="container listado">
                 <select id="inputState" class="form-control">
-                    <option selected aria-label="{{ $evento->fecha}}">{{ $evento->fecha}}</option>  
+                    <option selected aria-label="{{ $evento->fecha}}">{{ $evento->fecha}}</option>
                 </select>
             </div>
             <!-- Dates End -->
@@ -86,14 +86,13 @@
                                             <p>Cantidad: </p>
                                             <input type="text" name="quantity" id="eventoCantidad" placeholder="1" value/>
                                         </div>
-                                        <button type="submit" class="site-btn primary-btn" onclick="setCartItems({{$evento->id}})">AGREGAR AL CARRITO</button>         
+                                        <button type="submit" class="site-btn primary-btn" onclick="setCartItems({{$evento->id}})">AGREGAR AL CARRITO</button>
                                     </div>
                                     <div class="onAdd hideMessage">
                                         <a href="{{ route('carrito') }}" class="site-btn primary-btn">VER CARRITO</a>
                                         <a href="{{ route('tus-eventos') }}" class="site-btn primary-btn btn-outline">seguir comprando</a>
                                         <p>Ticket agregado al carrito</p>
                                     </div>
-                                
                                 </div>
                                 </div>
                             </div>
