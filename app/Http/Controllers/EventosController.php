@@ -172,6 +172,6 @@ class EventosController extends Controller
     public function destroy(Evento $evento)
     {
         $evento->delete();
-        return redirect()->route('eventos.eventos');
+        return redirect()->route('inicio');
     }
 }

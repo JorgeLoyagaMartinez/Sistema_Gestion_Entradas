@@ -50,9 +50,15 @@
             </div>
 
             <div class="hideMessage" id="editarEventoBtn" >
-                <a href="{{ route('editar-evento')}}" class="site-btn primary-btn my-4 text-light" data-toggle="tab" role="tab" aria-controls="editar" aria-selected="true">
+                <a href="{{ route('eventos.edit', $evento)}}" class="site-btn primary-btn my-4 text-light">
                     Editar evento
                 </a>
+                <form action="{{ route('eventos.destroy', $evento)}}" method="POST">
+                    @csrf @method('DELETE')
+                    <button type="submit" class="site-btn primary-btn my-4 text-light">
+                        Eliminar evento
+                    </button>
+                </form>
             </div>
 
             <div id="verEvento">
